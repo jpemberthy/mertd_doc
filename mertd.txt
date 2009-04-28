@@ -109,6 +109,19 @@ Al facilitar una herramienta que permita visualizar los datos del mercado de acc
 El planteamiento de la solucion acá expuesta se basa en la necesidad de tener mas control y conocimiento sobre un portafolio que una persona determinada tenga, independientemente de donde la persona se encuentre, pues gracias a la ayuda de la tecnologia y mas especificamente de la Web 2.0 acceder desde cualquier computador a un mismo portafolio de una persona es completamente transparente para quien lo usa. De esta forma, los usuarios podrán tener acceso a su portafolio de acciones en tiempo real independientemente de donde se encuentren.
 
 5. Marco de referencia.
+
+En un principio, las inversiones que se realizaban en la bolsa eran llevadas en papel y no se podia tener mucho control ni apreciar tendencia de los datos planos, ademas de esto dichos datos en papel no permitian estar pendiente de varias acciones para apreciar tendencias que faciliten toma de decisiones.
+
+En la actualidad hay varias aplicaciones Web que permiten llevar control sobre estados de inversion en la bolsa, desgraciadamente dichas herramientas estan en su mayoría en ingles y ademas de esto no ofrecen en muchos casos la personalización de las inversiones que la persona posee, para asi poder llevar registro de las mismas mas facilmente.
+
+Dichas aplicaciones ofrecen en muchos casos gráficas 2D que permiten apreciar tendencias de una sola acción en un momento determinado, o apreciar el estado de varias acciones en un solo lapso de tiempo.
+
+Por otro lado, ninguna de estas aplicaciones ofrece un componente 3D que nos permita comparar varias variables que afectan el mercado accionario para asi apreciar mejor dichas acciones, a menos que dichas aplicaciones esten corriendo en stand alone; Lo cual no es muy atractivo para la gente debido a que tienen que andar de computador en computador instalando el software para visualizar.
+
+Es por esto que se hace hace muy necesario el desarrollo de una aplicación que sea portable y permita ser visualizada desde cualquier lugar en cualquier plataforma, ademas de esto que nos permita apreciar las variables que afectan el mercado accionario particularmente el Colombiano.
+
+
+
 El marco de referencia se refiere... aahh.. a que hagas mención de literatura ya publicada relacionada con tu trabajo, antecedentes, lo actual, hacia donde va.
 
 Es algo asi como una introducción para saber de donde surge tu trabajo.
@@ -123,9 +136,12 @@ Es algo asi como una introducción para saber de donde surge tu trabajo.
 
 7. Desarrollo de la aplicacion.
 
+
 7.1 Desarrollo Web.
 
 7.2 Desarollo Modulo 3D.
+
+7.3  Desarrollo protocolo de comunicaciones modulo 3D Vs Aplicacion Web.
 
 Bibliografia
 
