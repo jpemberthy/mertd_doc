@@ -41,10 +41,22 @@ Jan Leeuwen and Jan van Leeuwen, editors.
   semantics}.
 \newblock MIT Press, 1994.
 
+\bibitem{RepEEc:col:piedrahita}
+Francisco Piedrahita.
+\newblock Retazos de historia.
+\newblock Technical Report 88416316, 1986.
+
 \bibitem{pierce:TAPL}
 Benjamin~C. Pierce.
 \newblock {\em Types and Programming Languages}.
 \newblock The MIT Press, 2002.
+
+\bibitem{RePEc:col:000159:003891}
+Maribel~Serna Rodríguez and Andrés Mauricio~Mora Cuartas.
+\newblock La bolsa de valores de colombia: Su historia y relación con la
+  universidad eafit.
+\newblock MERCADOS FINANCIEROS 003891, GRUPO DE INVESTIGACIÓN EN FINANZAS Y
+  BANCA - EAFIT, July 2007.
 
 \bibitem{selinger:lambda}
 Peter Selinger.
