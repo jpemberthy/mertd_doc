@@ -18,17 +18,23 @@ MVC: Modelo Vista Controlador, es un patrón de arquitectura de software que sep
 
 Daemon: Un demonio, (siglas en inglés, Disk And Execution Monitor), es un tipo especial de proceso informático que se ejecuta en segundo plano en vez de ser controlado directamente por el usuario. Este tipo de programas se ejecutan de forma continua (infinita), vale decir, que aunque se intente cerrar o matar el proceso, este continuará en ejecución o se reiniciará automáticamente. Todo esto sin intervención de terceros y sin dependencia de consola alguna.
 
-Shader:
+Unity3D: Motor de Juegos para crear aplicaciones 3D.
 
-Mesh:
+Shader: Conjunto de instrucciones gráficas destinadas para el acelerador gráfico, estas instrucciones dan el aspecto final de un objeto. Los Shaders determinan materiales, efectos, color, luz, sombra y etc.
 
-Delaunay Triangulations:
+Vertex Shaders: Actúa sobre las coordenadas, color, textura, etc. de un vértice.
+Geometry Shaders: Es capaz de generar nuevas primitivas dinámicamtente.
+Pixel Shaders: Actúa sobre el color de cada pixel (texel para ser más preciso).
 
-Transform:
+Mesh: Término que se refiere a una figura en 3D, en general que esté formada por polígonos.
 
-Game object:
+Triangulacion de Delaunay: Es una red de triángulos que cumple la condición de Delaunay. Esta condición dice que la circunferencia circunscrita de cada triángulo de la red no debe contener ningún vertice de otro triángulo. Se usan triangulaciones de Delaunay en geometría por ordenar, especialmente en gráficos 3D por computadora.
 
-Ortographic:
+Transform: Objeto en Unity3D que describe propiedades de un Mesh como Escalamiento, Rotacion, Posicion, etc.
+
+Proyección Ortográfica: Esta proyección utliza rayos paralelos para crear una imágen de la escena. El área de vision está determinada por las longitudes de los vectores right y up, que, por cierto, han de ser especificados, ya que con este tipo de proyección no se utilizan los de la cámara por defecto. En caso de ser omitidos, se usará el segundo metodo de proyección ortográfico de la cámara.
+
+Proyección Perspectiva: a palabra clave perspective determina la cámara perspectiva, que simula la tipica cámara con objetivo. El ángulo de visión horizontal es determinado por la proporción entre la longitud del vector direction y la longitud del vector right, o por la palabra clave opcional angle, que es el modo aconsejado. El ángulo de visión ha de ser mayor de 0 y menor de 180 grados. Vease la figura en la seccion "Situando la Cámara" para conocer la geometría de la cámara perspectiva.
 
 Framework: En el desarrollo de software, es una estructura de soporte definida, mediante la cual otro proyecto de software puede ser organizado y desarrollado. Típicamente, puede incluir soporte de programas, bibliotecas y un lenguaje interpretado entre otros software para ayudar a desarrollar y unir los diferentes componentes de un proyecto.
 Representa una arquitectura de software que modela las relaciones generales de las entidades del dominio. Provee una estructura y una metodología de trabajo la cual extiende o utiliza las aplicaciones del dominio.
@@ -80,13 +86,48 @@ Brindar un mecanismo que permita visualizar y comparar el movimiento de una o va
 
 → Desarrollar un protocolo de comunicación 
 
-→ Integrar el modelo de datos con la aplicación 3D para desplegar apropiadamente el movimiento del mercado y/o una determinada acción. 
+→ Integrar el modelo de datos con la aplicación 3D para desplegar apropiadamente el movimiento del mercado y/o una determinada acción en un tiempo determinado.
 
+→ Aprovechar el potencial de un motor 3D para dar solución a un problema real de visualización.
 
+3 Alcance y Productos esperados.
 
+Se entregará una aplicación Web desarrollada en Ruby on Rails que integrara un conjunto de contenidos en 3D desarrollados en Unity 3D un motor gráfico, herramienta que permitirá exportar los contenidos para que sean acoplados con la aplicación web y consecuentemente se puedan visualizar desde un navegador. Además los contenidos se estarán actualizando constantemente en un período de tiempo razonable, a esto se le suma la posibilidad de un usuario registrarse y configurar su perfil, sobre este perfil cada usuario podrá simular o evidenciar según sea el caso ( sí posee ó no acciones en la vida real) ganancias o pérdidas sobre las acciones que tenga registradas y la cantidad asociada a las mismas.
 
+Se  aclara de antemano que la aplicación no servirá como medio para comprar o vender acciones, en el perfil también se podrá desplegar de forma personalizada el movimiento de las acciones que el usuario tenga registradas, permitiendo diferentes esquemas de visualización en los que por ejemplo se tendrá en cuenta información guardada en la base de datos de la aplicación, por ejemplo los periodos de tiempo en los que un usuario registró una compra o venta serán utilizados para ayudar  al usuario a que se de una mejor idea del estado de su inversión.
 
+Adicionalmente los clásicos esquemas en segunda dimensión que actualmente son utilizados para la representación del movimiento de acciones como lo son las barras, también serán fueron en la aplicación, pero de tal manera que dichas barras no se queden solo mostrando el estado de una accion en varios periodos de tiempo, o varias acciones en un periodo de tiempo, sino ofrecer la oportunidad de ver varias acciones como se comportan en varios periodos de tiempo.
+
+Ademas de esto, se entregará un documento de tesis en el cual se explica como funciona la aplicacion y como van conectadas los diferentes modulos dentro de la misma.
+
+4. Justificación.
+
+El uso de tecnologías de visualización como apoyo al entendimiento de datos planos en diferentes entornos tanto de ingeniería como administrativos es un tema que día a día ha venido tomando auge en nuestra sociedad, debido a que facilitan la comprensión de como se estan comportando dichos datos para la ayuda a la toma de decisiones en un momento determinado.
+
+Al facilitar una herramienta que permita visualizar los datos del mercado de acciones no solo en el tiempo, sino tambien con diferentes acciones a la vez, se abre la posibilidad de comparar rendimientos o perdidas de una o varias acciones a travez del tiempo, para asi mirar tendencias, tomar decisiones, etc.
+
+El planteamiento de la solucion acá expuesta se basa en la necesidad de tener mas control y conocimiento sobre un portafolio que una persona determinada tenga, independientemente de donde la persona se encuentre, pues gracias a la ayuda de la tecnologia y mas especificamente de la Web 2.0 acceder desde cualquier computador a un mismo portafolio de una persona es completamente transparente para quien lo usa. De esta forma, los usuarios podrán tener acceso a su portafolio de acciones en tiempo real independientemente de donde se encuentren.
+
+5. Marco de referencia.
+El marco de referencia se refiere... aahh.. a que hagas mención de literatura ya publicada relacionada con tu trabajo, antecedentes, lo actual, hacia donde va.
+
+Es algo asi como una introducción para saber de donde surge tu trabajo.
+
+6. Solución.
+
+6.1 Porque Ruby on rails?.
+
+6.2 Porque Unity3D?.
+
+6.3 Como se complementan estas dos tecnologias?.
+
+7. Desarrollo de la aplicacion.
+
+7.1 Desarrollo Web.
+
+7.2 Desarollo Modulo 3D.
 
 Bibliografia
 
 http://rspec.info/
+http://www.unity3d.com
