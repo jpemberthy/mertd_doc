@@ -1,0 +1,209 @@
+\chapter{Preliminares}
+
+\section{Conceptos de diseño de lenguajes de programación}
+
+Esta sección presenta conceptos generales sobre construcción de lenguajes de
+programación.  Dichas definiciones han sido basadas en~\cite{pierce:TAPL}
+
+\subsection{Sintáxis concreta versus sintáxis abstracta}
+
+\begin{defi}{
+    Sintaxis concreta en lenguajes de programación se refiere a la representación del
+    programa como cadenas de caracteres. Dicha representación es la que sirve de
+    interfaz para el programador.  La sintáxis concreta es el primer nivel en la
+    definición de la sintaxis de un lenguaje.}
+\end{defi}
+
+\begin{ejem}
+  \label{sConcreta} 
+  El siguiente es un ejemplo de sintaxis concreta para una expresión matemática.
+  $$1 + 2 * 3$$
+\end{ejem}
+
+\begin{defi}
+  Sintáxis Abstracta es el segundo nivel en la representación de sintáctica de un
+  programa. Este nivel es alcanzado mediante dos procesos. Analisis léxico y parsing.
+  El analisis léxico descompone la cadena de caracteres en \textit{``tokens''} o
+  lexemas como identificadores, literales y puntuación. El segundo paso transforma la
+  lista de tokens en un árbol de sintaxis abstracta. Es en este paso es donde se
+  resuelve la presedencia de operadores.
+\end{defi}
+
+\begin{ejem}
+  El siguiente arbol representa la sintáxis abstracta del ejemplo presentado en
+  \ref{sConcreta}
+  $$\Tree [.$+$ 1 [.$*$ $2$ $3$ ].$*$ ]$$ Como se mencionó anteriormente la
+  precedencia es resuelta en el paso anterior a la construcción del arbol sintáctico
+  abstracto. De esta forma, la representación abstracta omite los parentesis.
+\end{ejem}
+
+\subsection{Gramáticas libres de contexto, Notación y ambigüedad.}
+Una gramática libre de contexto es un formalismo desarrollado por Noam Chomsky para
+describir en forma recursiva la estructura de bloques de los lenguajes. Dicho formalismo
+es ampliamente utilizado para la descripción formal de los lenguajes de programación.
+Una de las razones es que dada la gramática libre de contexto, o un subconjunto de
+esta, es posible construir algoritmos que reconozcan el lenguaje expresado por dicha 
+gramática en forma programática. Dos algorítmos ampliamante usados para este
+propósito son: $LL$ y $LR$.
+
+Formalmente, una gramática libre de contexto consta de un conjunto de símbolos
+terminales ($V$). Un conjunto de símbolos no terminales $\Sigma$, un conjunto de
+reglas generadoras $V \rightarrow (V \cup \Sigma)^{*}$. Y un $S \in V$ llamado
+símbolo inicial. Usualmente se utiliza convención Bakus-Naur o una de sus derivadas
+para definír la gramática. En este trabajo usaremos la siguiente convención:
+
+\begin{ejem}
+  Simple gramática para la definición de números.
+  \begin{grammar}
+    [(colon){$\rightarrow$}]
+    [(semicolon)$|$]
+    [(comma){}]
+    [(period){\vspace{4pt}}\\]
+    [(quote){\begin{bf}}{\end{bf}}]
+    [(nonterminal){$\langle$}{$\rangle$}]
+    <number>:<digit>;<digit>,<number>.
+    <digit>:"0";"1";"2";"3";"4";"5";"6";"7";"8";"9".
+  \end{grammar}
+\end{ejem}
+\begin{enumerate}
+\item Símbolo inicial es el primero en la lista de ``producciones'
+\item Símbolos no terminales son aquellos en negrilla. 
+\item Símbolos no terminales están encerrados en $\langle \rangle$
+\end{enumerate}
+
+\begin{defi}
+  Una gramática libre de contexto es ambigua si existe una cadena perteneciente al
+  lenguaje generado por dicha gramática y para esta, existe mas de un arbol sintáctico.
+\end{defi}
+\begin{ejem}
+  \label{ejemAmb}
+  El siguiente es un ejemplo de expresiones aritméticas ambiguas. (Por brevedad
+  usaremos la misma definición de $\langle digit \rangle$ anteriormente
+  mencionada)
+  \begin{grammar}
+    [(colon){$\rightarrow$}]
+    [(semicolon)$|$]
+    [(comma){}]
+    [(period){\vspace{4pt}}\\]
+    [(quote){\begin{bf}}{\end{bf}}]
+    [(nonterminal){$\langle$}{$\rangle$}]
+    <E>:<E>+<E>.
+    <E>:<E>*<E>.
+    <E>:<digit>.
+  \end{grammar}
+  Dada la anterior gramática y la expresión $1 + 2 * 3$ es posible construir dos
+  árboles sintácticos. 
+  $$\Tree [.$+$ 1 [.$*$ $2$ $3$ ].$*$ ] \,\,\,\,\,\, \Tree [.$*$ [.$+$ $1$ $2$ ].$+$ 3 ] $$
+  Esto es suficiente para concluir que la gramática es ambigua. 
+\end{ejem}
+
+\subsection{Operadores, precedencia y asociatividad}
+
+El ejemplo \ref{ejemAmb} muestra dos arboles sintácticos para la misma
+expresión aritmética. Solo uno de estos arboles cumple con el orden de evaluación
+esperado. El orden de evaluación esperado no es mas que el concepto de precedencia.
+
+\section{Lambda Calculo}
+Lambda cálculo es un formalismo matemático detras de la definición y aplicación de
+funciones. Dicho formalismo además representa la noción de computabilidad en forma
+equivalente a la maquina de Turing~\cite{henk:lambda}.
+
+\subsubsection{Lambda expresiones}
+
+El elemento constitutivo del lambda cálculo son ``lambda expresiones''.
+
+\begin{defi} 
+  \label{lambdaExpr}
+  Una lambda expresión puede ser definida en forma recursiva de la
+  siguiente manera:
+  \begin{enumerate}
+  \item Si $v$ es una variable, $v$ es una lambda expresión.
+  \item Si $v$ es una variable y $M$ es una lambda expresión, $\lambda v . M$ es una
+    lambda expresión. A esto operación nos referiremos como abstracción de M sobre v.
+  \item Si $N$ y $M$ son lambda expresiones entonces $N$ $M$ también es una
+    expresión. Esto es llamado aplicación ($M$ se aplica a $N$)
+  \end{enumerate}
+\end{defi}
+
+\subsubsection{Variables Libres}
+
+La operación de abstracción liga\footnote{El termino usual en la literatura es
+  \it{``bind''}.} la variable asociada. Son variables libres aquellas que no están
+ligadas por ninguna abstracción.
+
+\begin{ejem}
+  En $\lambda x . x\,y$ la variable $x$ en la expresión está ligada y la variable y está
+  libre.
+\end{ejem}
+
+\subsubsection{$\alpha$-Conversión}
+
+Dos expresiones son alfa-equivalentes (denotado por $=_{\alpha}$) si es posible
+transformar una en otra, renombrando las variables.
+
+\begin{ejem}
+  $\lambda x . x\,y =_{\alpha} \lambda z . z\,y$
+\end{ejem}
+
+Renombrar las variables ligadas de una lambda expresión es conocido como
+$\alpha$-Conversión. Existen dos casos especiales para tener en cuenta al realizar 
+$\alpha$-Conversión. En primer lugar, no es posible realizar $\alpha$-Conversión de una expresión
+por una variable que se encuentre libre en dicha expresión. Esto es llamado captura
+de nombres\footnote{En la literatura se refieren a \it{``name capture''}}.
+
+\begin{ejem}
+$\lambda x . x\,y \neq_{\alpha} \lambda y . y\,y$
+\end{ejem}
+
+El segundo caso se refiere al ámbito de las abstracciones.
+$\lambda x . \lambda x\,y$
+
+\subsubsection{Notación}
+
+Por practicidad seguiremos ciertas convenciones notacionales descritas
+en~\cite{selinger:lambda}.
+
+\begin{enumerate}
+\item Los paréntesis más externos serán omitidos. De esa forma $(N\,M)$ será escrito:
+  $N\,M$
+\item La abstracción se extiende hasta donde sea posible. $\lambda x . N\,M$ es
+  equivalente a $\lambda x.(N\,M)$ y no a $( \lambda x . N) M$
+\item Aplicación es asociativa por izquierda. $M\,N\,O$ es equivalente a $(M\,N)\,O$
+  y no a $M(N\,O)$
+\item Podemos abreviar la expresión $\lambda x . \lambda y . M$ de la forma: $\lambda x\,y . M $
+
+\end{enumerate}
+
+\subsubsection{Lambda cálculo puro versus lambda cálculo aplicado.} 
+
+Existen diferentes codificaciones bien conocidas usando lambda expresiones para
+diferentes tipos de datos usuales en lenguajes de programación
+\footnote{El capítulo 3 de ~\cite{selinger:lambda} incluye dichas codificaciones para
+  enteros, tuplas, listas arboles}.  Dichas codificaciones resultan convenientes como
+mecanismo de exploración del lambda cálculo como formalismo de computabilidad; sin
+embargo, ineficiente a la hora de implementar lenguajes de programación. Debido a
+esto suelen añadirse construcciones al lambda cálculo "puro" explicado
+anteriormente. Dichos lambda cálculos extendidos suelen denominarse lambda cálculos
+aplicados. A continuación se ilustra la relación de ambos conceptos
+\footnote{Tomado de ~\cite{leeuwen:handbook} Página 370.}
+
+\begin{equation*}
+  \begin{split}
+    programming\,\,language& = applied\,\,lambda\,\,calculus \\
+    & = pure\,\,lambda\,\,system + basic\,\,data\,\,types
+  \end{split}
+\end{equation*} 
+
+Ahora agregaremos 2 nuevas reglas a la definición \ref{lambdaExpr} 
+de lambda expresión. Siguiendo la terminología usada lo resultante 
+es un lambda cálculo aplicado. 
+
+\begin{enumerate}
+\item Si $k$ es un entero o $k$ es una cadena de caracteres entonces $k$ es una
+  constante.
+\item Si $k$ es una constante entonces $k$ es una lambda expresión.
+\end{enumerate}
+
+\subsection{Estrategias de Reducción}
+\subsection{Sistema de Tipos}
+

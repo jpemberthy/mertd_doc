@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  28 APR 2009 11:19
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  28 APR 2009 15:11
 entering extended mode
  %&-line parsing enabled.
 **tesis.tex
@@ -664,46 +664,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--40
 
 ] (./capitulo2.tex
 Cap\'{\i }tulo 1.
-) (./capitulo11.tex [1
+) (./capitulo3.tex [1
 
 ] [2
 
 ]
 Cap\'{\i }tulo 2.
-) (./capitulo22.tex [3] [4
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+) (./capitulo11.tex [3] [4
 
 ]
 Cap\'{\i }tulo 3.
-[5]) (./capitulo3.tex [6]
+) (./capitulo22.tex [5] [6
+
+]
 Cap\'{\i }tulo 4.
-[7
-
-]
-Overfull \hbox (19.85986pt too wide) in paragraph at lines 40--40
-[]\OT1/cmr/bx/n/12 Gram^^Sati-cas li-bres de con-tex-to, No-ta-ci^^Son y am-big
-^^?uedad. 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--93
-
- []
-
-[8]
-Overfull \hbox (3.16724pt too wide) in paragraph at lines 102--105
-[]\OT1/cmr/m/n/10 El ejem-plo 4[] mues-tra dos ar-bo-les sint^^Sacti-cos pa-ra 
-la mis-ma ex-pre-si^^Son aritm^^Seti-
- []
-
-[9] [10]) (./capitulo4.tex [11] [12
-
-]
+[7]) (./capitulo3.tex [8]
 Cap\'{\i }tulo 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+) (./capitulo4.tex [9
+
+] [10
+
+]
+Cap\'{\i }tulo 6.
 
 Overfull \hbox (0.11179pt too wide) in paragraph at lines 21--43
 \OMS/cmsy/m/n/10 h$\OT1/cmr/m/n/10 Infix$\OMS/cmsy/m/n/10 i$$!$$h$\OT1/cmr/m/n/
@@ -719,7 +721,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--43
 
  []
 
-[13]
+[11]
 Underfull \hbox (badness 10000) detected at line 75
 [][]
  []
@@ -729,19 +731,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--76
 
  []
 
-[14]) (./capitulo5.tex [15] [16
+[12]) (./capitulo5.tex [13] [14
 
 ]
-Cap\'{\i }tulo 6.
-) [17] [18
+Cap\'{\i }tulo 7.
+) [15] [16
 
-] (./tesis.bbl
-Underfull \hbox (badness 6078) in paragraph at lines 50--56
-\OT1/cmr/m/n/10 l^^S^^Pnea $\OT1/cmtt/m/n/10 http : / / www . mathstat . dal . 
-ca / []selinger / papers / lambdanotes .
- []
-
-) [19
+] (./tesis.bbl) [17
 
 ] (./tesis.aux)
 
@@ -749,13 +745,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4257 strings out of 493876
- 50894 string characters out of 1150567
- 143592 words of memory out of 3000000
- 7441 multiletter control sequences out of 10000+50000
- 15499 words of font info for 62 fonts, out of 3000000 for 5000
+ 4239 strings out of 493876
+ 50637 string characters out of 1150567
+ 137550 words of memory out of 3000000
+ 7421 multiletter control sequences out of 10000+50000
+ 15192 words of font info for 61 fonts, out of 3000000 for 5000
  716 hyphenation exceptions out of 8191
- 27i,15n,27p,912b,366s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,9n,27p,912b,298s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx10.pfb></usr/l
 ocal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx12.pfb></usr/local/texl
 ive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx7.pfb></usr/local/texlive/2008/t
@@ -775,9 +771,9 @@ ocal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy7.pfb></usr/local/texli
 ve/2008/texmf-dist/fonts/type1/bluesky/cm/cmti10.pfb></usr/local/texlive/2008/t
 exmf-dist/fonts/type1/bluesky/cm/cmti8.pfb></usr/local/texlive/2008/texmf-dist/
 fonts/type1/bluesky/cm/cmtt10.pfb>
-Output written on tesis.pdf (27 pages, 176784 bytes).
+Output written on tesis.pdf (25 pages, 156218 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
+ 167 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

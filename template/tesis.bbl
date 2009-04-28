@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 
 \bibitem{Aasa:UDS}
 Anika Aasa.
@@ -9,13 +9,6 @@ Anika Aasa.
 Arthur Baars and Doaitse Swierstra.
 \newblock Syntax macros.
 \newblock Unfinished Draft.
-
-\bibitem{henk:lambda}
-Henk Barendregt and Erik Barendsen.
-\newblock Introduction to lambda calculus.
-\newblock Disponible en línea:
-  \url{http://www.cs.chalmers.se/Cs/Research/Logic/TypesSS05/Extra/geuvers.pdf%
-}, March 2000.
 
 \bibitem{cardelli:extensiblesyntax}
 Luca Cardelli, Florian Matthes, and Martin Abadi.
@@ -34,25 +27,6 @@ G.~J. Chaitin.
 Martin Grabmüller.
 \newblock Algorithm w step by step.
 \newblock Draft paper, September 2007.
-
-\bibitem{leeuwen:handbook}
-Jan Leeuwen and Jan van Leeuwen, editors.
-\newblock {\em Handbook of Theoretical Computer Science: Formal models and
-  semantics}.
-\newblock MIT Press, 1994.
-
-\bibitem{pierce:TAPL}
-Benjamin~C. Pierce.
-\newblock {\em Types and Programming Languages}.
-\newblock The MIT Press, 2002.
-
-\bibitem{selinger:lambda}
-Peter Selinger.
-\newblock Lecture notes on the lambda calculus.
-\newblock Disponible en línea
-  \url{http://www.mathstat.dal.ca/~selinger/papers/lambdanotes.pdf}.
-\newblock Notas de un curso de lambda cálculo de la universidad de Ottawa de
-  2001.
 
 \bibitem{GuySteele:grow}
 Guy~L. Steele, Jr.
