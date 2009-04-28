@@ -78,7 +78,7 @@ Brindar un mecanismo que permita visualizar y comparar el movimiento de una o va
 
 → Permitir llevar el control e historial de acciones de manera personalizada.
 
-→ Desarrollar un protocolo de comunicación 
+→ Desarrollar un protocolo de comunicación que pueda ser reutilizado en aplicaciones futuras, que exploten el poder del motor gráfico para desarrollar contenidos alimentados desde una base de datos.
 
 → Integrar el modelo de datos con la aplicación 3D para desplegar apropiadamente el movimiento del mercado y/o una determinada acción. 
 
