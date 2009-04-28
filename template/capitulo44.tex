@@ -1,0 +1,97 @@
+\chapter{Parsing, Análisis y Evaluación.}
+
+Esta sección explica los diferentes pasos en la implementación de nuestro lenguaje para 
+soportar operadores permisivos. 
+\section{Una visión general}
+Inicialmente
+$$Texto \rightarrow_{1} Tokens \rightarrow_{2} (Declaraciones,Main) $$
+
+\section{Lexing y Parsing}
+El primer paso de parsing detecta las declaraciones de funciones y la función
+principal main. 
+Esta es la gramática del lenguaje siguiendo la notación del capítulo 3. 
+
+\begin{grammar}
+  [(colon){$\rightarrow$}]
+  [(semicolon)$|$]
+  [(comma){}]
+  [(period){\vspace{4pt}}\\]
+  [(quote){\begin{bf}}{\end{bf}}]
+  [(nonterminal){$\langle$}{$\rangle$}]
+  <Program>:<Declarations>,<Main>.
+  <Declarations>:<Declarations>,<Declaration>;"$\epsilon$".
+  <Declaration>:<Infix>;<Prefix>;<Suffix>;<Closed>.
+  <Infix>:<Init>,<InfixKeyword>,<Precedence>,<Id>,<Id>,<Id>,"=",<Definition>.
+  <Precedence>:"$\epsilon$",<Number>.
+  <InfixKeyword>:"infixr";"infixl".
+  <Init>:"let";"let rec".
+  <Prefix>:<Init>,<Id>,<Ids>,"=",<Definition>.
+  <Suffix>:<Init>,"suffix",<Ids>,<Id>,"=",<Definition>.
+  <Closed>:<Init>,"closed",Id,Ids,Id,"=",<Definition>.
+  <Ids>:<Id>,<Ids>;"$\epsilon$".
+  <Definition>:<ExpresionTokens>.
+  <ExprTokens>:<ExprToken><ExprTokens>;"$\epsilon$".
+  <ExprToken>:<Literal>;<Id>.
+  <Literal>:<Number>;<String>.
+  <Number>:<Digit>;<Digit><Number>.
+  <Digit>:"0";"1";"2";"3";"4";"5";"6";"7";"8";"9".
+  <String>:"''",<Chars>,"''".
+  <Chars>:<Char><Chars>;"$\epsilon$".
+  <Char>:Cualquier caracter.
+  <Id>:<Char>;<Char><Id>.
+  <Main>:"main = ";<Definition>.
+  \end{grammar}
+
+Ahora bien. Para definir una expresión añadiremos notación adicional:
+$Op_{p}^{a}$ Indica que el operador tiene precedencia $p$ asociatividad $a$. 
+Usaremos un entero para denotar $p$ y $\{l,r\}$ son los posibles valores de $a$.
+$l$ denota asociatividad por izquierda y $r$ asociatividad por derecha.  
+
+$$Expr := Open \, Expr \, Closed $$
+$$Expr :=  Expr_{1} Infix_{n}^{r} \, Expr_{2} | \forall_{Op_{m}^{r} \in Expr_{1} or Expr_{2}} n \leq m $$
+En español... Una expresión puede estar formada por un operador infijo operando 2
+subexpresiones. siempre y cuando el operador tenga la menor precedencia. En la defición falta
+agregar el manejo de asociatividad (en el caso de $Infix_{n}^{r}$ se debe garantizar que no exista ningún
+operador con la misma precedencia y misma asociatividad en $Expr_{2}$).
+$$Expr :=  Expr_{1} Infix_{n}^{l} \, Expr_{2} | \forall_{Op_{m}^{j} \in Expr_{1} or Expr_{2}} n \leq m $$
+$$Expr :=  PrefixOp \, Expr $$
+$$Expr :=  Expr \, SuffixOp $$
+$$Expr :=  Literal $$
+$$Literal := string|natural$$
+
+\section{Resolución de operadores}
+
+\begin{algorithm}[H]
+  \SetLine
+  \KwData{Lista de ExprTokens}
+  \KwResult{Arbol de evaluación}
+  initialization\;
+  \SetKwFunction{KwFn}{FN}
+  \If{understand}{
+    go to next section\;
+
+  }
+  \caption{Resolución de precedencia}
+\end{algorithm}
+
+\section{Sistema de tipos}
+El lenguaje de programación es fuertemente tipado y está construido a partir de 
+la implementación encontrada en~\cite{WStepByStep:Martin}. El sistema de tipos esta
+conformado por los siguientes constructores en Haskell.
+\begin{verbatim}
+  data Type    =  TVar String
+               |  TInt   
+               |  TBool
+               |  TString
+               |  TList Type
+               |  TProd Type Type
+               |  TFun Type Type
+\end{verbatim}
+
+El sistema de tipos cuenta con variables de tipos, enteros, booleanos, cadenas de
+caracteres, listas genéricas, funciones y producto de tipos. 
+
+\section{Construcción de notación aritmética}
+\section{}
+
+
