@@ -1,0 +1,12 @@
+
+
+
+   
+  
+* Lambda cálculo sin tipos
+  La base de nuestro lenguaje está basada en un pequeño lambda cálculo sin
+  tipos. Dicha construcción es ampliada en lo que se suele denominar lambda
+  calculo aplicado. 
+* "Lambda cálculo" aplicativo. 
+* Sintáxis concreta.
+

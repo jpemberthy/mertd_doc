@@ -1,0 +1,23 @@
+The bnf.sty file provides a mechanism for pretty printing context free
+grammars. To use it, include it in one of the TEXINPUTS directories ---
+if you can't get it installed in your standard TeX macro directory, your
+current working directory should do. To make the macros available,
+include it (bnf) as an optional parameter of the \documentstyle command.
+
+The bnf.tex file is the documentation. You should be able to LaTeX this
+without problems.
+
+Known bugs are reported in bnf.bugs.
+
+Please report any new bugs to hugh@cs.kun.nl, or 
+         Hugh Osborne,
+         Department of Informatics,
+         University of Nijmegen,
+    6525GT Nijmegen,
+         The Netherlands.
+
+If you have not received this file directly from me, please let me know.
+I like to have an idea of how widespread its use is.
+Thanks,
+		Hugh.
+

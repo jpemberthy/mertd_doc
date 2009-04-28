@@ -1,0 +1,27 @@
+\select@language {spanish}
+\contentsline {chapter}{Introducci\IeC {\'o}n}{\es@roman {5}}
+\contentsline {chapter}{\numberline {1}Objetivos}{1}
+\contentsline {section}{\numberline {1.1}Objetivo General}{1}
+\contentsline {section}{\numberline {1.2}Objetivos Espec\IeC {\'\i }ficos}{1}
+\contentsline {chapter}{\numberline {2}Importancia del problema.}{3}
+\contentsline {chapter}{\numberline {3}Preliminares}{5}
+\contentsline {section}{\numberline {3.1}Conceptos de dise\IeC {\~n}o de lenguajes de programaci\IeC {\'o}n}{5}
+\contentsline {subsection}{\numberline {3.1.1}Sint\IeC {\'a}xis concreta versus sint\IeC {\'a}xis abstracta}{5}
+\contentsline {subsection}{\numberline {3.1.2}Gram\IeC {\'a}ticas libres de contexto, Notaci\IeC {\'o}n y ambig\IeC {\"u}edad.}{6}
+\contentsline {subsection}{\numberline {3.1.3}Operadores, precedencia y asociatividad}{7}
+\contentsline {section}{\numberline {3.2}Lambda Calculo}{7}
+\contentsline {subsubsection}{Lambda expresiones}{7}
+\contentsline {subsubsection}{Variables Libres}{7}
+\contentsline {subsubsection}{$\alpha $-Conversi\IeC {\'o}n}{8}
+\contentsline {subsubsection}{Notaci\IeC {\'o}n}{8}
+\contentsline {subsubsection}{Lambda c\IeC {\'a}lculo puro versus lambda c\IeC {\'a}lculo aplicado.}{8}
+\contentsline {subsection}{\numberline {3.2.1}Estrategias de Reducci\IeC {\'o}n}{9}
+\contentsline {subsection}{\numberline {3.2.2}Sistema de Tipos}{9}
+\contentsline {chapter}{\numberline {4}Parsing, An\IeC {\'a}lisis y Evaluaci\IeC {\'o}n.}{11}
+\contentsline {section}{\numberline {4.1}Una visi\IeC {\'o}n general}{11}
+\contentsline {section}{\numberline {4.2}Lexing y Parsing}{11}
+\contentsline {section}{\numberline {4.3}Resoluci\IeC {\'o}n de operadores}{13}
+\contentsline {section}{\numberline {4.4}Sistema de tipos}{13}
+\contentsline {section}{\numberline {4.5}Construcci\IeC {\'o}n de notaci\IeC {\'o}n aritm\IeC {\'e}tica}{13}
+\contentsline {section}{\numberline {4.6}}{13}
+\contentsline {chapter}{\numberline {5}Conclusiones}{15}
