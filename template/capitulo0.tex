@@ -1,52 +1,19 @@
 \chapter{Introducción}
 
-\begin{quote} \textit{``A good Notation has a sublety and suggestiveness which at
-  times makes it almost seem like a live teacher.''}
-  \\ --Bertrand Russell\footnote{Prólogo del capítulo \textit{``Minilanguages: Finding a
-    Notation that Sings''} en \textit{``The art of Unix Programming''} por Eric Raymond.}
+\begin{quote} \textit{``Elegir acciones individuales sin una idea de lo que estás buscando es como atravesar una fábrica de dinamita con una cerilla encendida. Puedes sobrevivir, pero sigues siendo un idiota''}
+  \\ --Joel Greenblat\footnote{\textit{``The little book that beats the market''} por Joel Greenblat.}
 \end{quote} 
+En la bolsa de valores de Colombia existen cuatro mercados principales de operación, el trabajo de ésta tesis se enfoca única y exclusivamente a uno de estos mercados; El mercado de Renta Variable, donde se negocian las acciones de compañías inscritas en el mercado publico de valores.\\
 
-La idea de permitir al usuario crear y modificar operadores dentro del lenguaje de
-programación tiene como objetivo permitir sintaxis más concisa. Algunos lenguajes de
-programación permiten al programador definir sus propios operadores
-infijos(~\cite{jones:haskell},~\cite{leroy:ocaml}). Otros permiten el concepto más
-general de operador disfijo(~\cite{Coq},~\cite{goguen:obj},~\cite{clavel:maude} y
-otros). Operadores disfijos son descritos en~\cite{jones:distfix} y
-~\cite{Aasa:UDS}. Escencialmente se trata de operadores de una o mas partes que
-pueden traer los argumentos embebidos en si mismos. Un ejemplo tomado de OBJ es el 
-siguiente:
+Al tratarse de un mercado público cualquier persona esta en la libertad de comprar y/o vender acciones según lo desee, generalmente estas personas llevan cierto control sobre sus inversiones, ya sea de un modo sistematizado ó escribiendo en una agenda de apuntes sus movimientos, con esta información realizan un análisis de datos que le permite determinar cuándo una acción le genera ganancia y/o perdida que apoyen una decisión, como comprar o vender.\\
 
-\begin{verbatim}
-op if_then_else_fi : Bool Int Int -> Int .
-\end{verbatim}
+El análisis de datos siempre ha estado ligado a una representación gráfica de los mismos, y el mercado de acciones mencionado anteriormente no es la excepción, generalmente para representar éstos datos, los que describen el estado y movimiento en el tiempo de una acción se han utilizado gráficos en segunda dimensión como barras, tortas, entre otras.\\
 
-La idea de este trabajo se centra en el estudio de los operadores permisivos 
-como mecanismo de extensibilidad en un lenguaje de programación. 
+Esta tesis introduce un nuevo paradigma de visualización en este campo, al pasar de gráficos en dos dimensiones, a una nueva propuesta de contenidos para visualizar los datos en tres dimensiones, permitiéndole a una persona visualizar de una manera innovadora el estado y movimiento de las acciones sobre las que lleve algún tipo de registro.\\
 
-El capitulo 1 es un breve recuento de los objetivos generales y específicos. El
-capítulo 2 hace un recorrido sobre diferentes conceptos necesarios para este
-trabajo. El capítulo 3 justifíca este trabajo en el área de diseño de lenguajes de
-programación. El capítulo 4 explica los detalles de diseño y diferentes estrategias
-utilizadas para el \textit{``parsing''} y evaluación de operadores distfijos
-permisivos. El capítulo 5 ilustra como puede utilizarse el lenguaje de programación
-como mecanísmo de extensibilidad para construir características
-pseudo-objetuales. Finalmente el capitulo 6 describe las conclusiones respecto la
-implementación de dicho lenguaje y describe posible trabajo futuro alrededor de la
-inclusión de operadores permisivos.
+Para lograr éste trabajo, se desarrollo una aplicación web, en la que se integró satisfactoriamente un modelo de datos con un conjunto de contenidos 3D, sobre los cuales se estableció un protocolo de comunicación que permite el apropiado despliegue de gráficos, buscando que sea más fácil para un usuario identificar el movimiento de una ó varias acciones.\\
 
-
-
-
-
-
-
-
-
-
-
-
-  
-
+La propuesta acá descrita es presentada como proyecto de grado para optar por el titulo de Ingeniería de Sistemas de la Universidad EAFIT.
 
 %%% Local Variables: 
 %%% mode: latex

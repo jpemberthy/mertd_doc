@@ -1,20 +1,20 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2008.2.18)  22 APR 2009 23:32
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  28 APR 2009 10:47
 entering extended mode
  %&-line parsing enabled.
-**tesis
+**tesis.tex
 (./tesis.tex
 LaTeX2e <2005/12/01>
-Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, croatian, bulgarian, russian, ukrainian, czech, slovak, danish, dut
-ch, finnish, finnish, french, basque, french, german, ngerman, german, ngerman,
- greek, monogreek, ancientgreek, ibycus, hungarian, hungarian, italian, italian
-, latin, latin, mongolian, mongolian, norsk, norsk, coptic, esperanto, estonian
-, icelandic, indonesian, interlingua, romanian, serbian, slovenian, turkish, up
-persorbian, welsh, polish, polish, portuguese, portuguese, spanish, catalan, ga
-lician, spanish, catalan, galician, swedish, swedish, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/book.cls
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german-x-2008-06-18, ngerman-x-2008-06-18, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, la
+tin, lithuanian, mongolian, mongolian2a, bokmal, nynorsk, polish, portuguese, r
+omanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turki
+sh, ukenglish, ukrainian, uppersorbian, welsh, loaded.
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2005/09/16 v1.4f Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/bk10.clo
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/bk10.clo
 File: bk10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -32,27 +32,30 @@ File: bk10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 ) (./qtree.sty
 Package: 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
 Package: qtree 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
-(/usr/share/texmf-texlive/tex/latex/pict2e/pict2e.sty
-Package: pict2e 2006/03/05 v0.2s Improved picture commands (HjG,RN)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2008/07/22 v0.2w Improved picture commands (HjG,RN,JT)
 
-(/etc/texmf/tex/latex/pict2e/pict2e.cfg
+(/usr/local/texlive/2008/texmf-dist/tex/latex/pict2e/pict2e.cfg
 File: pict2e.cfg 2004/06/25 v0.1r pict2e configuration for teTeX/TeXLive
 )
-Package pict2e Info: Driver file: pdftex.def on input line 99.
+Package pict2e Info: Driver file: pdftex.def on input line 100.
 
-(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
+(/usr/local/texlive/2008/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2008/09/08 v0.04l Graphics/color for pdfTeX
 \Gread@gobject=\count88
 )
-Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 101.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 102.
 
-(/usr/share/texmf-texlive/tex/latex/pict2e/p2e-pdftex.def
+(/usr/local/texlive/2008/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
 File: p2e-pdftex.def 2004/06/25 v0.1r Driver-dependant file (RN,HjG)
 )
-(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
 \pIIe@GRAPH=\toks14
+\@arclen=\dimen103
+\@arcrad=\dimen104
+\@tempdimd=\dimen105
 )
 \c@treecount=\count89
 \c@branchcount=\count90
@@ -158,7 +161,8 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 \qroofx=\count92
 \qroofy=\count93
 \@qrscratchbox=\box48
-) (./bussproofs.sty
+)
+(./bussproofs.sty
 Proof Tree (bussproofs) style macros. Version 1.0.
 \theLevel=\count94
 \myMaxLevel=\count95
@@ -168,33 +172,34 @@ Proof Tree (bussproofs) style macros. Version 1.0.
 \myBoxD=\box52
 \myBoxLL=\box53
 \myBoxRL=\box54
-\thisAboveSkip=\dimen103
-\thisBelowSkip=\dimen104
-\newScoreStart=\dimen105
-\newScoreEnd=\dimen106
-\newCenter=\dimen107
-\displace=\dimen108
-\leftLowerAmt=\dimen109
-\rightLowerAmt=\dimen110
-\scoreHeight=\dimen111
-\scoreDepth=\dimen112
-\htLbox=\dimen113
-\htRbox=\dimen114
-\htAbox=\dimen115
-\htCbox=\dimen116
-) (/usr/share/texmf-texlive/tex/latex/base/latexsym.sty
+\thisAboveSkip=\dimen106
+\thisBelowSkip=\dimen107
+\newScoreStart=\dimen108
+\newScoreEnd=\dimen109
+\newCenter=\dimen110
+\displace=\dimen111
+\leftLowerAmt=\dimen112
+\rightLowerAmt=\dimen113
+\scoreHeight=\dimen114
+\scoreDepth=\dimen115
+\htLbox=\dimen116
+\htRbox=\dimen117
+\htAbox=\dimen118
+\htCbox=\dimen119
+) (/usr/local/texlive/2008/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
-) (./algorithm2e.sty
+)
+(./algorithm2e.sty
 Package: algorithm2e 2005/10/04 v3.9 algorithms environments
 \c@AlgoLine=\count96
 
-(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texmf-texlive/tex/latex/tools/xspace.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
 )
 ********************************************************
@@ -211,9 +216,9 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \skiplength=\skip121
 \algomargin=\skip122
 \skipalgocfslide=\skip123
-\algowidth=\dimen117
-\inoutsize=\dimen118
-\inoutline=\dimen119
+\algowidth=\dimen120
+\inoutsize=\dimen121
+\inoutline=\dimen122
 \algocf@inoutbox=\box55
 \algocf@inputbox=\box56
 \AlCapSkip=\skip124
@@ -223,24 +228,24 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \c@algocf=\count98
 \algocf@algoframe=\box58
 \algocf@algobox=\box59
-) (/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+) (/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip126
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
-\ex@=\dimen120
+\ex@=\dimen123
 ))
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen121
+\pmbraise@=\dimen124
 )
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count99
@@ -255,7 +260,7 @@ LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box60
 \strutbox@=\box61
-\big@size=\dimen122
+\big@size=\dimen125
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \macc@depth=\count104
@@ -268,12 +273,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \column@=\count109
 \maxfields@=\count110
 \andhelp@=\toks19
-\eqnshift@=\dimen123
-\alignsep@=\dimen124
-\tagshift@=\dimen125
-\tagwidth@=\dimen126
-\totwidth@=\dimen127
-\lineht@=\dimen128
+\eqnshift@=\dimen126
+\alignsep@=\dimen127
+\tagshift@=\dimen128
+\tagwidth@=\dimen129
+\totwidth@=\dimen130
+\lineht@=\dimen131
 \@envbody=\toks20
 \multlinegap=\skip127
 \multlinetaggap=\skip128
@@ -281,7 +286,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks22
 \thm@bodyfont=\toks23
@@ -293,52 +298,53 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip131
 \dth@everypar=\toks27
 )
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2002/01/22 v2.2d
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2001/10/25 v2.2f
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
 ))
-(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/ltxmisc/url.sty
 \Urlmuskip=\muskip11
-Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 ) (./bnf.sty
 Style-Option: `bnf' v1.1a <92/01/30> (Hugh Osborne/br)
-) (/usr/share/texmf-texlive/tex/generic/babel/babel.sty
-Package: babel 2005/11/23 v3.8h The Babel package
+) (/usr/local/texlive/2008/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
 
-(/usr/share/texmf-texlive/tex/generic/babel/spanish.ldf
-Language: spanish.ldf 2005/03/31 v4.2b Spanish support from the babel system
+(/usr/local/texlive/2008/texmf-dist/tex/generic/babel/spanish.ldf
+Language: spanish.ldf 2008/07/06 v5.0e Spanish support from the babel system
 
-(/usr/share/texmf-texlive/tex/generic/babel/babel.def
-File: babel.def 2005/11/23 v3.8h Babel common definitions
+(/usr/local/texlive/2008/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count111
-\U@D=\dimen129
+\U@D=\dimen132
 )
+\es@datefmt=\count112
 \es@quottoks=\toks28
-\es@quotdepth=\count112
-Package babel Info: Making . an active character on input line 509.
-Package babel Info: Making " an active character on input line 540.
-Package babel Info: Making < an active character on input line 641.
-Package babel Info: Making > an active character on input line 642.
+\es@quotdepth=\count113
+Package babel Info: Making " an active character on input line 490.
+Package babel Info: Making . an active character on input line 583.
+Package babel Info: Making < an active character on input line 628.
+Package babel Info: Making > an active character on input line 628.
 ))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2006/05/05 v1.1b Input encoding file
 \inpenc@prehook=\toks29
 \inpenc@posthook=\toks30
 
-(/usr/share/texmf-texlive/tex/latex/base/utf8.def
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2006/03/30 v1.1i UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encodingT1
 
-(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2006/03/30 v1.1i UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -488,7 +494,7 @@ File: t1enc.dfu 2006/03/30 v1.1i UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encodingOT1
 
-(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2006/03/30 v1.1i UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -519,7 +525,7 @@ File: ot1enc.dfu 2006/03/30 v1.1i UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encodingOMS
 
-(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2006/03/30 v1.1i UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -543,8 +549,8 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-\c@defi=\count113
-\c@ejem=\count114
+\c@defi=\count114
+\c@ejem=\count115
  (./tesis.aux)
 \openout1 = `tesis.aux'.
 
@@ -560,44 +566,83 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 36.
 
-(/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/supp-pdf.tex
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count116
+\scratchdimen=\dimen133
+\scratchbox=\box62
+\nofMPsegments=\count117
+\nofMParguments=\count118
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen134
+\MPnumerator=\count120
+\everyMPtoPDFconversion=\toks32
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 36.
+ (/usr/local/texlive/2008/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 36.
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 36.
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 ) [1
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+{/usr/local/texlive/2008/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ] (./tesis.toc
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 (Font)              using `OT1/cmr/bx/n' instead on input line 2.
 
-Package spanish Info: Replacing undefined sc font
-(spanish)             shape by faked small caps on input line 2.
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 2.
+
 )
 \tf@toc=\write3
 \openout3 = `tesis.toc'.
 
  (./capitulo0.tex [3] [4
 
-]) [5] [6
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
-] (./capitulo1.tex
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+[5]) [6] (./capitulo1.tex
 Cap\'{\i }tulo 1.
 ) (./capitulo2.tex [1
+
 
 ] [2
 
@@ -629,13 +674,7 @@ Overfull \hbox (3.16724pt too wide) in paragraph at lines 102--105
 la mis-ma ex-pre-si^^Son aritm^^Seti-
  []
 
-[7]
-Overfull \hbox (3.44496pt too wide) in paragraph at lines 163--165
-[]\OT1/cmr/m/n/10 Por prac-ti-ci-dad se-gui-re-mos cier-tas con-ven-cio-nes no-
-ta-cio-na-les des-cri-tas en [[]]. 
- []
-
-[8]) (./capitulo4.tex [9] [10
+[7] [8]) (./capitulo4.tex [9] [10
 
 ]
 Cap\'{\i }tulo 4.
@@ -670,46 +709,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--76
 Cap\'{\i }tulo 5.
 ) [15] [16
 
-] (./tesis.bbl [17
-
-]
-Underfull \hbox (badness 6078) in paragraph at lines 83--89
+] (./tesis.bbl
+Underfull \hbox (badness 6078) in paragraph at lines 50--56
 \OT1/cmr/m/n/10 l^^S^^Pnea $\OT1/cmtt/m/n/10 http : / / www . mathstat . dal . 
 ca / []selinger / papers / lambdanotes .
  []
 
-) [18] (./tesis.aux)
+) [17
+
+] (./tesis.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 3817 strings out of 93945
- 44568 string characters out of 1162043
- 135425 words of memory out of 1500000
- 7013 multiletter control sequences out of 10000+50000
- 15499 words of font info for 62 fonts, out of 1200000 for 2000
- 745 hyphenation exceptions out of 8191
- 27i,15n,25p,215b,357s stack positions out of 5000i,500n,6000p,200000b,5000s
-</usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf
--texlive/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type
-1/bluesky/cm/cmbx7.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmbx8.p
-fb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmcsc10.pfb></usr/share/tex
-mf-texlive/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/bluesky/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmmi7
-.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/tex
-mf-texlive/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/typ
-e1/bluesky/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr5.p
-fb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr6.pfb></usr/share/texmf-
-texlive/fonts/type1/bluesky/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/b
-luesky/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsl10.pfb>
-</usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf-t
-exlive/fonts/type1/bluesky/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/b
-luesky/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmti8.pfb
-></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt10.pfb>
-Output written on tesis.pdf (24 pages, 175294 bytes).
+ 4251 strings out of 493876
+ 50814 string characters out of 1150567
+ 143592 words of memory out of 3000000
+ 7441 multiletter control sequences out of 10000+50000
+ 15499 words of font info for 62 fonts, out of 3000000 for 5000
+ 716 hyphenation exceptions out of 8191
+ 27i,15n,27p,506b,366s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx10.pfb></usr/l
+ocal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx12.pfb></usr/local/texl
+ive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx7.pfb></usr/local/texlive/2008/t
+exmf-dist/fonts/type1/bluesky/cm/cmbx8.pfb></usr/local/texlive/2008/texmf-dist/
+fonts/type1/bluesky/cm/cmcsc10.pfb></usr/local/texlive/2008/texmf-dist/fonts/ty
+pe1/bluesky/cm/cmmi10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/blues
+ky/cm/cmmi5.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmmi
+7.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr10.pfb></us
+r/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr12.pfb></usr/local/te
+xlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr17.pfb></usr/local/texlive/2008
+/texmf-dist/fonts/type1/bluesky/cm/cmr5.pfb></usr/local/texlive/2008/texmf-dist
+/fonts/type1/bluesky/cm/cmr6.pfb></usr/local/texlive/2008/texmf-dist/fonts/type
+1/bluesky/cm/cmr7.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/c
+m/cmr8.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsl10.pf
+b></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy10.pfb></usr/l
+ocal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy7.pfb></usr/local/texli
+ve/2008/texmf-dist/fonts/type1/bluesky/cm/cmti10.pfb></usr/local/texlive/2008/t
+exmf-dist/fonts/type1/bluesky/cm/cmti8.pfb></usr/local/texlive/2008/texmf-dist/
+fonts/type1/bluesky/cm/cmtt10.pfb>
+Output written on tesis.pdf (23 pages, 171502 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
+ 160 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
