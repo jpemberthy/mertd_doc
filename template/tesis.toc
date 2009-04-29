@@ -8,28 +8,30 @@
 \contentsline {chapter}{\numberline {2}Alcance y productos esperados}{3}
 \contentsline {chapter}{\numberline {3}Justificaci\IeC {\'o}n}{5}
 \contentsline {chapter}{\numberline {4}Marco referencial}{7}
-\contentsline {chapter}{\numberline {5}Objetivos}{9}
-\contentsline {section}{\numberline {5.1}Objetivo General}{9}
-\contentsline {section}{\numberline {5.2}Objetivos Espec\IeC {\'\i }ficos}{9}
-\contentsline {chapter}{\numberline {6}Importancia del problema.}{11}
-\contentsline {chapter}{\numberline {7}Preliminares}{13}
-\contentsline {section}{\numberline {7.1}Conceptos de dise\IeC {\~n}o de lenguajes de programaci\IeC {\'o}n}{13}
-\contentsline {subsection}{\numberline {7.1.1}Sint\IeC {\'a}xis concreta versus sint\IeC {\'a}xis abstracta}{13}
-\contentsline {subsection}{\numberline {7.1.2}Gram\IeC {\'a}ticas libres de contexto, Notaci\IeC {\'o}n y ambig\IeC {\"u}edad.}{14}
-\contentsline {subsection}{\numberline {7.1.3}Operadores, precedencia y asociatividad}{15}
-\contentsline {section}{\numberline {7.2}Lambda Calculo}{15}
-\contentsline {subsubsection}{Lambda expresiones}{15}
-\contentsline {subsubsection}{Variables Libres}{15}
-\contentsline {subsubsection}{$\alpha $-Conversi\IeC {\'o}n}{16}
-\contentsline {subsubsection}{Notaci\IeC {\'o}n}{16}
-\contentsline {subsubsection}{Lambda c\IeC {\'a}lculo puro versus lambda c\IeC {\'a}lculo aplicado.}{16}
-\contentsline {subsection}{\numberline {7.2.1}Estrategias de Reducci\IeC {\'o}n}{17}
-\contentsline {subsection}{\numberline {7.2.2}Sistema de Tipos}{17}
-\contentsline {chapter}{\numberline {8}Parsing, An\IeC {\'a}lisis y Evaluaci\IeC {\'o}n.}{19}
-\contentsline {section}{\numberline {8.1}Una visi\IeC {\'o}n general}{19}
-\contentsline {section}{\numberline {8.2}Lexing y Parsing}{19}
-\contentsline {section}{\numberline {8.3}Resoluci\IeC {\'o}n de operadores}{21}
-\contentsline {section}{\numberline {8.4}Sistema de tipos}{21}
-\contentsline {section}{\numberline {8.5}Construcci\IeC {\'o}n de notaci\IeC {\'o}n aritm\IeC {\'e}tica}{21}
-\contentsline {section}{\numberline {8.6}}{21}
-\contentsline {chapter}{\numberline {9}Conclusiones}{23}
+\contentsline {chapter}{\numberline {5}Soluci\IeC {\'o}n}{9}
+\contentsline {section}{\numberline {5.1}\IeC {\textquestiondown }Por qu\IeC {\'e} Ruby on Rails?}{9}
+\contentsline {chapter}{\numberline {6}Objetivos}{11}
+\contentsline {section}{\numberline {6.1}Objetivo General}{11}
+\contentsline {section}{\numberline {6.2}Objetivos Espec\IeC {\'\i }ficos}{11}
+\contentsline {chapter}{\numberline {7}Importancia del problema.}{13}
+\contentsline {chapter}{\numberline {8}Preliminares}{15}
+\contentsline {section}{\numberline {8.1}Conceptos de dise\IeC {\~n}o de lenguajes de programaci\IeC {\'o}n}{15}
+\contentsline {subsection}{\numberline {8.1.1}Sint\IeC {\'a}xis concreta versus sint\IeC {\'a}xis abstracta}{15}
+\contentsline {subsection}{\numberline {8.1.2}Gram\IeC {\'a}ticas libres de contexto, Notaci\IeC {\'o}n y ambig\IeC {\"u}edad.}{16}
+\contentsline {subsection}{\numberline {8.1.3}Operadores, precedencia y asociatividad}{17}
+\contentsline {section}{\numberline {8.2}Lambda Calculo}{17}
+\contentsline {subsubsection}{Lambda expresiones}{17}
+\contentsline {subsubsection}{Variables Libres}{17}
+\contentsline {subsubsection}{$\alpha $-Conversi\IeC {\'o}n}{18}
+\contentsline {subsubsection}{Notaci\IeC {\'o}n}{18}
+\contentsline {subsubsection}{Lambda c\IeC {\'a}lculo puro versus lambda c\IeC {\'a}lculo aplicado.}{18}
+\contentsline {subsection}{\numberline {8.2.1}Estrategias de Reducci\IeC {\'o}n}{19}
+\contentsline {subsection}{\numberline {8.2.2}Sistema de Tipos}{19}
+\contentsline {chapter}{\numberline {9}Parsing, An\IeC {\'a}lisis y Evaluaci\IeC {\'o}n.}{21}
+\contentsline {section}{\numberline {9.1}Una visi\IeC {\'o}n general}{21}
+\contentsline {section}{\numberline {9.2}Lexing y Parsing}{21}
+\contentsline {section}{\numberline {9.3}Resoluci\IeC {\'o}n de operadores}{23}
+\contentsline {section}{\numberline {9.4}Sistema de tipos}{23}
+\contentsline {section}{\numberline {9.5}Construcci\IeC {\'o}n de notaci\IeC {\'o}n aritm\IeC {\'e}tica}{23}
+\contentsline {section}{\numberline {9.6}}{23}
+\contentsline {chapter}{\numberline {10}Conclusiones}{25}

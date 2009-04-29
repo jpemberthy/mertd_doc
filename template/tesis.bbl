@@ -71,6 +71,12 @@ Guy~L. Steele, Jr.
 \newblock Growing a language.
 \newblock {\em Higher Order Symbol. Comput.}, 12(3):221--236, 1999.
 
+\bibitem{ror:awdwr}
+Dave Thomas, David Hansson, Leon Breedt, Mike Clark, James~Duncan Davidson,
+  Justin Gehtland, and Andreas Schwarz.
+\newblock Agile web development with rails.
+\newblock Technical report, 2006.
+
 \bibitem{ulf:4fold}
 Ulf Wiger.
 \newblock Four-fold increase in productivity and quality.
