@@ -92,7 +92,7 @@ Brindar un mecanismo que permita visualizar y comparar el movimiento de una o va
 
 3 Alcance y Productos esperados.
 
-Se entregará una aplicación Web desarrollada en Ruby on Rails que integrara un conjunto de contenidos en 3D desarrollados en Unity 3D un motor gráfico, herramienta que permitirá exportar los contenidos para que sean acoplados con la aplicación web y consecuentemente se puedan visualizar desde un navegador. Además los contenidos se estarán actualizando constantemente en un período de tiempo razonable, a esto se le suma la posibilidad de un usuario registrarse y configurar su perfil, sobre este perfil cada usuario podrá simular o evidenciar según sea el caso ( sí posee ó no acciones en la vida real) ganancias o pérdidas sobre las acciones que tenga registradas y la cantidad asociada a las mismas.
+Se entrega una aplicación Web desarrollada en Ruby on Rails que integrara un conjunto de contenidos en 3D desarrollados en Unity 3D un motor gráfico, herramienta que permitirá exportar los contenidos para que sean acoplados con la aplicación web y consecuentemente se puedan visualizar desde un navegador. Además los contenidos se estarán actualizando constantemente en un período de tiempo razonable, a esto se le suma la posibilidad de un usuario registrarse y configurar su perfil, sobre este perfil cada usuario podrá simular o evidenciar según sea el caso ( sí posee ó no acciones en la vida real) ganancias o pérdidas sobre las acciones que tenga registradas y la cantidad asociada a las mismas.
 
 Se  aclara de antemano que la aplicación no servirá como medio para comprar o vender acciones, en el perfil también se podrá desplegar de forma personalizada el movimiento de las acciones que el usuario tenga registradas, permitiendo diferentes esquemas de visualización en los que por ejemplo se tendrá en cuenta información guardada en la base de datos de la aplicación, por ejemplo los periodos de tiempo en los que un usuario registró una compra o venta serán utilizados para ayudar  al usuario a que se de una mejor idea del estado de su inversión.
 
@@ -110,25 +110,50 @@ El planteamiento de la solucion acá expuesta se basa en la necesidad de tener m
 
 5. Marco de referencia.
 
-En un principio, las inversiones que se realizaban en la bolsa eran llevadas en papel y no se podia tener mucho control ni apreciar tendencia de los datos planos, ademas de esto dichos datos en papel no permitian estar pendiente de varias acciones para apreciar tendencias que faciliten toma de decisiones.
+El Mercado Público de Valores en Colombia ha pasado por muchas etapas y ha sido manejado por diversas instituciones, las cuales nacen y desaparecen con el correr de los años según cambian las necesidades de quienes intervienen en ellas. Tuvo que pasar un siglo desde la creación de la primera bolsa en el país para que apareciera la Bolsa de Valores de Colombia, institución que hoy representa la unificación del Mercado Bursátil. (bibitem 1)
 
-En la actualidad hay varias aplicaciones Web que permiten llevar control sobre estados de inversion en la bolsa, desgraciadamente dichas herramientas estan en su mayoría en ingles y ademas de esto no ofrecen en muchos casos la personalización de las inversiones que la persona posee, para asi poder llevar registro de las mismas mas facilmente.
+Así como en otros sectores, el desarrollo tecnológico ha jugado un papel fundamental para el desarrollo de la bolsa de valores, pues desde sus inicios quienes han estado sumergidos en este mundo, se han valido de la tecnología de momento para llevar control de las acciones, es así como desde que se presentó una fiebre de especulaciones surgida por las oscilaciones de la tasa de cambio ocurridas a principio de siglo(debido a la guerra de los mil dias) y que se desarrollaban todas las noches de 7:00 a 10:00 en el atrio de la catedral de la candelaria de Medellín y dentro del parque Pedro Justo Berrio (P14), posteriormente culminaban con el desarrollo de negocios en oro y los registros eran calculados con una máquina sumadora o en algunos casos en calculo mental. Actualmente la Bolsa cuenta con avanzados sistemas de información de uso interno que permite conocer el estado en tiempo real de una acción y ver como se ha comportado en el tiempo, las personas naturales que poseen acciones y que no tienen acceso a estos sistemas pueden consultar el estado de sus inversiones en diversos sitios públicos (sitios web, revistas, periódicos), en donde se les muestra una información plana a veces acompañada de unos gráficos en dos dimensiones.
 
-Dichas aplicaciones ofrecen en muchos casos gráficas 2D que permiten apreciar tendencias de una sola acción en un momento determinado, o apreciar el estado de varias acciones en un solo lapso de tiempo.
+Muchas de las personas naturales mencionadas anteriormente, llevan el control de sus inversiones en libros y hojas de cálculo diseñadas por ellos mismos, algunos, los mas familiarizados con herramientas tecnológicas utilizan herramientas disponibles (google finance entre otras), estas ultimas herramientas son útiles a la hora de llevar el historial y permiten calcular fácilmente ganancias/pérdidas, algunos de los problemas que tienen estas aplicaciones son: 
 
-Por otro lado, ninguna de estas aplicaciones ofrece un componente 3D que nos permita comparar varias variables que afectan el mercado accionario para asi apreciar mejor dichas acciones, a menos que dichas aplicaciones esten corriendo en stand alone; Lo cual no es muy atractivo para la gente debido a que tienen que andar de computador en computador instalando el software para visualizar.
+1. Los gráficos a pesar de que son claros, están limitados a presentar en dos dimensiones multiples indicadores, que a la larga le podría representar al usuario común complicaciones a la hora de entender el gráfico.
 
-Es por esto que se hace hace muy necesario el desarrollo de una aplicación que sea portable y permita ser visualizada desde cualquier lugar en cualquier plataforma, ademas de esto que nos permita apreciar las variables que afectan el mercado accionario particularmente el Colombiano.
+2.La mayoria no permiten llevar el control personalizado del portafolio, y aquellas que integran esta característica rara vez incluyen a la bolsa de valores de Colombia o son de libre acceso.
 
 
+3. Ninguna de estas aplicaciones ofrece un componente 3D que permita comparar varias variables que afectan el mercado accionario para apreciar mejor el comportamiento de las acciones, y que aparte de esto se puedan acceder desde un navegador web, pues la tendencia en 3D es desarrollar aplicaciones tipo Stand-Alone (QUOTE ACA)
 
-El marco de referencia se refiere... aahh.. a que hagas mención de literatura ya publicada relacionada con tu trabajo, antecedentes, lo actual, hacia donde va.
-
-Es algo asi como una introducción para saber de donde surge tu trabajo.
+Es por esto que es pertinente el desarrollo de una aplicación que sea portable y permita ser visualizada desde cualquier lugar en cualquier plataforma, ademas de esto que permita apreciar las variables que afectan el mercado accionario Colombiano.
 
 6. Solución.
 
-6.1 Porque Ruby on rails?.
+6.1 Porque Ruby on rails?
+
+Para responder a esta pregunta, es necesario primero definir a Ruby on Rails, llamado tambien Rails ó RoR, es un framework que hace que sea más fácil desarrollar, implementar, y mantener aplicaciones web. Durante los meses siguieron a su primera liberación, Rails paso de ser un juguete desconocido a un fenomeno mundial. Ha ganado premios, y más importante aún, se ha convertido en el framework de preferencia para la implementación de cierto conjunto de las llamadas aplicaciones web 2.0/cite{1204891}.
+
+Se eligió Rails para desarrollar la aplicación web en la que se comunican datos y contenidos 3D, por qué se buscaba utilizar una herramienta en la que la convención estuviera por encima de la configuración/footnote{coc}, que contará con una arquitectura pre definida, en éste caso MVC (Modelo Vista Controlador) que Rails aprovecha apropiadamente, cuándo se desarrolla en Rails, hay un lugar para cada pieza de código/footnote{dry}, y todos los componentes de la aplicación interactuan según el estandar. 
+
+Los programadores profesionales, suelen escribir tests para simular el comportamiento de la aplicación que se esta desarrollando, para el presente proyecto, se buscaba que el framework tuvieran un soporte para hacer tests, una vez más Rails se ajusta a esas necesidades, pues cuenta con soporte para algunos framework para realizar tests, se encuentran; RSpec (utilizada en este proyecto, bajo la filosofía de TDD) en donde se escriben los tests, antes de la implementación, Test Unit (BDD), Shoulda y Cucumber (BDD)
+
+Se buscaba que la herramienta fuera escrita en un lenguaje de programación orientado a objetos e interpretado, por la necesidad de crear scripts que corrieran indpendiente de la aplición, como tareas programadas para correr cada cierto tiempo. Las aplicaciones en Rails son escritas en el lenguaje de programación Ruby, que cumple con lo que se buscaba, y aparte introduce características favorables como metaprogramación, haciendo que el código sea más fácil de entender, leer y/o escribir, programas más cortos en terminos de LOC, para evidenciar esto, a continuación se muestra una porción de código de la aplicación, en la que se define una clase de un Modelo que expresa mucha información en pocas líneas de código y es fácil de entender.
+
+
+ACA CODIGO MODELO
+
+
+class Record < ActiveRecord::Base  
+  belongs_to :stock_action
+  
+  validates_presence_of :amount, :on => :create
+  validates_presence_of :price
+  validates_presence_of :variation
+  
+  validates_numericality_of :price, :amount, :greater_than => 0
+  validates_numericality_of :variation
+
+END
+
+Finalmente, no se pretendía manipular la base de datos directamente, es decir, con código nativo del motor de bases de datos, sino sacar provecho de técnicas como ORM, en las que las tablas de las bases de datos son mapeadas a clases, los registros de las tablas son mapeados como objetos, y consecuentemente los campos, se mapean como atributos de los objetos, mientras que existen metodos de clases que se encargan de realizar operaciones a nivel de tablas, dejando como opcional la utilización de código SQL dentro de la aplicación./footnote, una vez más Rails suplió esta necesidad con ActiveRecord ó Datamapper.
 
 6.2 Porque Unity3D?.
 
@@ -137,13 +162,52 @@ Es algo asi como una introducción para saber de donde surge tu trabajo.
 7. Desarrollo de la aplicacion.
 
 
+7.x SCM
+
 7.1 Desarrollo Web.
+
+7.1.x Deployment
 
 7.2 Desarollo Modulo 3D.
 
 7.3  Desarrollo protocolo de comunicaciones modulo 3D Vs Aplicacion Web.
 
 Bibliografia
+
+
+1) Serna R Maribel, Mora C Andrés. La Bolsa de Valores de Colombia: Su historia y relación con la Universidad EAFIT,GRUPO DE INVESTIGACIÓN EN FINANZAS Y BANCA, Universidad EAFIT, 2007.
+
+
+
+@TechReport{RePEc:col:000159:003891,
+  author={Maribel Serna Rodríguez and Andrés Mauricio Mora Cuartas},
+  title={La Bolsa de Valores de Colombia: Su historia y relación con la Universidad EAFIT},
+  year=2007,
+  month=Jul,
+  institution={GRUPO DE INVESTIGACIÓN EN FINANZAS Y BANCA - EAFIT},
+  type={MERCADOS FINANCIEROS},
+  url={http://ideas.repec.org/p/col/000159/003891.html},
+  number={003891}
+}
+
+@TechReport{ror:oreally,
+  author={Bruce A Tate and Andrés Curt Hibbs},
+  title={Ruby on Rails},
+  year=2007,
+  institution={Anaya Multimedia}
+}
+
+@book{1204891,
+ author = {Thomas,, Dave and Hansson,, David and Breedt,, Leon and Clark,, Mike and Davidson,, James Duncan and Gehtland,, Justin and Schwarz,, Andreas},
+ title = {Agile Web Development with Rails},
+ year = {2006},
+ isbn = {0977616630},
+ publisher = {Pragmatic Bookshelf},
+ }
+
+Anika Aasa. User Deﬁned Syntax. PhD thesis, Chalmers University of 
+Technology, 1992. 
+
 
 http://rspec.info/
 http://www.unity3d.com
