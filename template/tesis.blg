@@ -2,22 +2,11 @@ This is BibTeX, Version 0.99c (Web2C 7.5.7)
 The top-level auxiliary file: tesis.aux
 The style file: plain.bst
 Database file #1: tesis.bib
-Warning--I didn't find a database entry for "Chaitin:ElegantLisp"
-Warning--I didn't find a database entry for "ulf:4fold"
-Warning--I didn't find a database entry for "cardelli:extensiblesyntax"
-Warning--I didn't find a database entry for "GuySteele:grow"
-Warning--I didn't find a database entry for "Swierstra:Macros"
-Warning--I didn't find a database entry for "Aasa:UDS"
-Warning--I didn't find a database entry for "pierce:TAPL"
-Warning--I didn't find a database entry for "henk:lambda"
-Warning--I didn't find a database entry for "selinger:lambda"
-Warning--I didn't find a database entry for "leeuwen:handbook"
-Warning--I didn't find a database entry for "WStepByStep:Martin"
 Warning--empty institution in RepEEc:col:piedrahita
 Warning--empty institution in ror:awdwr
 You've used 3 entries,
             2118 wiz_defined-function locations,
-            531 strings with 4768 characters,
+            514 strings with 4520 characters,
 and the built_in function-call counts, 851 in all, are:
 = -- 77
 > -- 58
@@ -56,4 +45,4 @@ warning$ -- 2
 while$ -- 6
 width$ -- 4
 write$ -- 33
-(There were 13 warnings)
+(There were 2 warnings)

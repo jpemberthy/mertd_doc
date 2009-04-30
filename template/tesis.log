@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  29 APR 2009 19:43
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  29 APR 2009 20:03
 entering extended mode
  %&-line parsing enabled.
 **tesis.tex
@@ -29,9 +29,10 @@ File: bk10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (./qtree.sty
-Package: 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
-Package: qtree 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/qtree/qtree.sty
+Package: 2006/07/10 v.3.1Qtree: tree-drawing for linguistics
+Package: qtree 2006/07/10 v.3.1Qtree: tree-drawing for linguistics
 (/usr/local/texlive/2008/texmf-dist/tex/latex/pict2e/pict2e.sty
 Package: pict2e 2008/07/22 v0.2w Improved picture commands (HjG,RN,JT)
 
@@ -162,7 +163,7 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 \qroofy=\count93
 \@qrscratchbox=\box48
 )
-(./bussproofs.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/bussproofs/bussproofs.sty
 Proof Tree (bussproofs) style macros. Version 1.0.
 \theLevel=\count94
 \myMaxLevel=\count95
@@ -192,7 +193,7 @@ Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
 )
-(./algorithm2e.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2005/10/04 v3.9 algorithms environments
 \c@AlgoLine=\count96
 
@@ -311,9 +312,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (/usr/local/texlive/2008/texmf-dist/tex/latex/ltxmisc/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
-) (./bnf.sty
-Style-Option: `bnf' v1.1a <92/01/30> (Hugh Osborne/br)
-) (/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/graphicx.sty
+)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/keyval.sty
@@ -572,18 +572,18 @@ Now handling font encoding U ...
  (./tesis.aux)
 \openout1 = `tesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 (/usr/local/texlive/2008/texmf-dist/tex/context/base/supp-pdf.tex
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -598,16 +598,16 @@ LaTeX Font Info:    ... okay on input line 33.
 \MPnumerator=\count120
 \everyMPtoPDFconversion=\toks33
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 37.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 36.
  (/usr/local/texlive/2008/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+LaTeX Font Info:    Try loading font information for U+msa on input line 36.
 
 (/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 37.
+LaTeX Font Info:    Try loading font information for U+msb on input line 36.
 
 (/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
@@ -634,13 +634,13 @@ Package spanish Warning: Replacing `OT1/cmr/bx/sc' by
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
 (spanish)                faked small caps on input line 4.
 
-[3])
+)
 \tf@toc=\write3
 \openout3 = `tesis.toc'.
 
- (./glosario.tex [4] [5
+ (./glosario.tex [3] [4
 
-] [6] [7]) (./capitulo0.tex [8]
+] [5] [6] [7]) (./capitulo0.tex [8]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -678,7 +678,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 7--42
+Underfull \hbox (badness 10000) in paragraph at lines 7--41
 
  []
 
@@ -738,6 +738,16 @@ Underfull \vbox (badness 2698) has occurred while \output is active []
  [7])
 (./capitulo6.tex [8]
 Cap\'{\i }tulo 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
@@ -819,166 +829,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
-) (./capitulo11.tex [13 <./Mono.PNG (PNG copy)>] [14]
-Cap\'{\i }tulo 6.
-) (./capitulo22.tex [15
+) [13 <./Mono.PNG (PNG copy)>] [14] (./tesis.bbl) [15
 
-] [16
-
-]
-Cap\'{\i }tulo 7.
-
-LaTeX Warning: Citation `Chaitin:ElegantLisp' on page 17 undefined on input lin
-e 25.
-
-
-LaTeX Warning: Citation `ulf:4fold' on page 17 undefined on input line 29.
-
-
-LaTeX Warning: Citation `cardelli:extensiblesyntax' on page 17 undefined on inp
-ut line 36.
-
-[17]
-
-LaTeX Warning: Citation `GuySteele:grow' on page 18 undefined on input line 43.
-
-
-
-LaTeX Warning: Citation `Swierstra:Macros' on page 18 undefined on input line 4
-5.
-
-
-LaTeX Warning: Citation `cardelli:extensiblesyntax' on page 18 undefined on inp
-ut line 46.
-
-
-LaTeX Warning: Citation `Aasa:UDS' on page 18 undefined on input line 47.
-
-) (./capitulo33.tex [18]
-Cap\'{\i }tulo 8.
-
-LaTeX Warning: Citation `pierce:TAPL' on page 19 undefined on input line 6.
-
-[19
-
-]
-Overfull \hbox (19.85986pt too wide) in paragraph at lines 40--40
-[]\OT1/cmr/bx/n/12 Gram^^Sati-cas li-bres de con-tex-to, No-ta-ci^^Son y am-big
-^^?uedad. 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--93
-
- []
-
-[20]
-Overfull \hbox (3.16724pt too wide) in paragraph at lines 102--105
-[]\OT1/cmr/m/n/10 El ejem-plo 4[] mues-tra dos ar-bo-les sint^^Sacti-cos pa-ra 
-la mis-ma ex-pre-si^^Son aritm^^Seti-
- []
-
-
-LaTeX Warning: Citation `henk:lambda' on page 21 undefined on input line 109.
-
-[21]
-
-LaTeX Warning: Citation `selinger:lambda' on page 22 undefined on input line 16
-4.
-
-
-LaTeX Warning: Citation `selinger:lambda' on page 22 undefined on input line 18
-2.
-
-
-LaTeX Warning: Citation `leeuwen:handbook' on page 22 undefined on input line 1
-88.
-
-[22]) (./capitulo44.tex [23] [24
-
-]
-Cap\'{\i }tulo 9.
-
-Overfull \hbox (0.11179pt too wide) in paragraph at lines 21--43
-\OMS/cmsy/m/n/10 h$\OT1/cmr/m/n/10 Infix$\OMS/cmsy/m/n/10 i$$!$$h$\OT1/cmr/m/n/
-10 Init$\OMS/cmsy/m/n/10 i$$h$\OT1/cmr/m/n/10 InfixKeyword$\OMS/cmsy/m/n/10 i$$
-h$\OT1/cmr/m/n/10 Precedence$\OMS/cmsy/m/n/10 i$$h$\OT1/cmr/m/n/10 Id$\OMS/cmsy
-/m/n/10 i$$h$\OT1/cmr/m/n/10 Id$\OMS/cmsy/m/n/10 i$$h$\OT1/cmr/m/n/10 Id$\OMS/c
-msy/m/n/10 i$\OT1/cmr/bx/sc/10 =$\OMS/cmsy/m/n/10 h$\OT1/cmr/m/n/10 Definition$
-\OMS/cmsy/m/n/10 i$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--43
-
- []
-
-[25]
-Underfull \hbox (badness 10000) detected at line 75
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--76
-
- []
-
-[26]
-
-LaTeX Warning: Citation `WStepByStep:Martin' on page 27 undefined on input line
- 79.
-
-) (./capitulo55.tex [27] [28
-
-]
-Cap\'{\i }tulo 10.
-) [29] [30
-
-] (./tesis.bbl) [31
 
 ] (./tesis.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 4459 strings out of 493876
- 53757 string characters out of 1150567
- 147067 words of memory out of 3000000
- 7613 multiletter control sequences out of 10000+50000
- 15499 words of font info for 62 fonts, out of 3000000 for 5000
+ 4381 strings out of 493876
+ 53191 string characters out of 1150567
+ 144616 words of memory out of 3000000
+ 7550 multiletter control sequences out of 10000+50000
+ 15192 words of font info for 61 fonts, out of 3000000 for 5000
  716 hyphenation exceptions out of 8191
- 27i,15n,27p,1358b,369s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,27p,1358b,369s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx10.pfb></usr/l
 ocal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx12.pfb></usr/local/texl
 ive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx7.pfb></usr/local/texlive/2008/t
 exmf-dist/fonts/type1/bluesky/cm/cmbx8.pfb></usr/local/texlive/2008/texmf-dist/
 fonts/type1/bluesky/cm/cmcsc10.pfb></usr/local/texlive/2008/texmf-dist/fonts/ty
-pe1/bluesky/cm/cmmi10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/blues
-ky/cm/cmmi5.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmmi
-7.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr10.pfb></us
-r/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr12.pfb></usr/local/te
-xlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr17.pfb></usr/local/texlive/2008
-/texmf-dist/fonts/type1/bluesky/cm/cmr5.pfb></usr/local/texlive/2008/texmf-dist
-/fonts/type1/bluesky/cm/cmr6.pfb></usr/local/texlive/2008/texmf-dist/fonts/type
-1/bluesky/cm/cmr7.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/c
-m/cmr8.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsl10.pf
-b></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy10.pfb></usr/l
-ocal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy7.pfb></usr/local/texli
-ve/2008/texmf-dist/fonts/type1/bluesky/cm/cmti10.pfb></usr/local/texlive/2008/t
-exmf-dist/fonts/type1/bluesky/cm/cmti8.pfb></usr/local/texlive/2008/texmf-dist/
-fonts/type1/bluesky/cm/cmtt10.pfb>
-Output written on tesis.pdf (43 pages, 372935 bytes).
+pe1/bluesky/cm/cmr10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesk
+y/cm/cmr12.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr17
+.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr6.pfb></usr/
+local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr7.pfb></usr/local/texli
+ve/2008/texmf-dist/fonts/type1/bluesky/cm/cmr8.pfb></usr/local/texlive/2008/tex
+mf-dist/fonts/type1/bluesky/cm/cmsl10.pfb></usr/local/texlive/2008/texmf-dist/f
+onts/type1/bluesky/cm/cmsy10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type
+1/bluesky/cm/cmti10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky
+/cm/cmti8.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmtt10
+.pfb>
+Output written on tesis.pdf (27 pages, 310269 bytes).
 PDF statistics:
- 230 PDF objects out of 1000 (max. 8388607)
+ 157 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

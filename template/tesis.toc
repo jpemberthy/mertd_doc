@@ -11,28 +11,3 @@
 \contentsline {chapter}{\numberline {5}Soluci\IeC {\'o}n}{9}
 \contentsline {section}{\numberline {5.1}\IeC {\textquestiondown }Por qu\IeC {\'e} Ruby on Rails?}{9}
 \contentsline {section}{\numberline {5.2}\IeC {\textquestiondown }Por qu\IeC {\'e} Unity3D?}{11}
-\contentsline {chapter}{\numberline {6}Objetivos}{15}
-\contentsline {section}{\numberline {6.1}Objetivo General}{15}
-\contentsline {section}{\numberline {6.2}Objetivos Espec\IeC {\'\i }ficos}{15}
-\contentsline {chapter}{\numberline {7}Importancia del problema.}{17}
-\contentsline {chapter}{\numberline {8}Preliminares}{19}
-\contentsline {section}{\numberline {8.1}Conceptos de dise\IeC {\~n}o de lenguajes de programaci\IeC {\'o}n}{19}
-\contentsline {subsection}{\numberline {8.1.1}Sint\IeC {\'a}xis concreta versus sint\IeC {\'a}xis abstracta}{19}
-\contentsline {subsection}{\numberline {8.1.2}Gram\IeC {\'a}ticas libres de contexto, Notaci\IeC {\'o}n y ambig\IeC {\"u}edad.}{20}
-\contentsline {subsection}{\numberline {8.1.3}Operadores, precedencia y asociatividad}{21}
-\contentsline {section}{\numberline {8.2}Lambda Calculo}{21}
-\contentsline {subsubsection}{Lambda expresiones}{21}
-\contentsline {subsubsection}{Variables Libres}{21}
-\contentsline {subsubsection}{$\alpha $-Conversi\IeC {\'o}n}{22}
-\contentsline {subsubsection}{Notaci\IeC {\'o}n}{22}
-\contentsline {subsubsection}{Lambda c\IeC {\'a}lculo puro versus lambda c\IeC {\'a}lculo aplicado.}{22}
-\contentsline {subsection}{\numberline {8.2.1}Estrategias de Reducci\IeC {\'o}n}{23}
-\contentsline {subsection}{\numberline {8.2.2}Sistema de Tipos}{23}
-\contentsline {chapter}{\numberline {9}Parsing, An\IeC {\'a}lisis y Evaluaci\IeC {\'o}n.}{25}
-\contentsline {section}{\numberline {9.1}Una visi\IeC {\'o}n general}{25}
-\contentsline {section}{\numberline {9.2}Lexing y Parsing}{25}
-\contentsline {section}{\numberline {9.3}Resoluci\IeC {\'o}n de operadores}{27}
-\contentsline {section}{\numberline {9.4}Sistema de tipos}{27}
-\contentsline {section}{\numberline {9.5}Construcci\IeC {\'o}n de notaci\IeC {\'o}n aritm\IeC {\'e}tica}{27}
-\contentsline {section}{\numberline {9.6}}{27}
-\contentsline {chapter}{\numberline {10}Conclusiones}{29}
