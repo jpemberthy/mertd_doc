@@ -12,3 +12,19 @@
 \contentsline {section}{\numberline {5.1}\IeC {\textquestiondown }Por qu\IeC {\'e} Ruby on Rails?}{9}
 \contentsline {section}{\numberline {5.2}\IeC {\textquestiondown }Por qu\IeC {\'e} Unity3D?}{11}
 \contentsline {section}{\numberline {5.3}\IeC {\textquestiondown }C\IeC {\'o}mo se complementan estas dos tecnolog\IeC {\'\i }as?}{14}
+\contentsline {chapter}{\numberline {6}Desarrollo de la aplicaci\IeC {\'o}n.}{15}
+\contentsline {section}{\numberline {6.1}Desarrollo Web.}{15}
+\contentsline {subsection}{\numberline {6.1.1}Configuraci\IeC {\'o}n.}{15}
+\contentsline {subsection}{\numberline {6.1.2}Ambientes.}{15}
+\contentsline {subsection}{\numberline {6.1.3}Especificaciones.}{15}
+\contentsline {subsection}{\numberline {6.1.4}Definici\IeC {\'o}n de modelos.}{15}
+\contentsline {subsection}{\numberline {6.1.5}Daemon - \emph {Stock Getter}.}{15}
+\contentsline {subsection}{\numberline {6.1.6}Construcci\IeC {\'o}n de tests.}{15}
+\contentsline {subsection}{\numberline {6.1.7}Desarrollo del n\IeC {\'u}cleo.}{15}
+\contentsline {section}{\numberline {6.2}Desarrollo Contenidos 3D}{15}
+\contentsline {subsection}{\numberline {6.2.1}M\IeC {\'o}dulo de detecci\IeC {\'o}n de datos de informaci\IeC {\'o}n del exterior:}{16}
+\contentsline {subsection}{\numberline {6.2.2}M\IeC {\'o}dulo de renderizado de escena(Grapher):}{16}
+\contentsline {subsection}{\numberline {6.2.3}Modulo de informaci\IeC {\'o}n de Objetos:}{16}
+\contentsline {section}{\numberline {6.3}Desarrollo protocolo de comunicaci\IeC {\'o}n.}{16}
+\contentsline {section}{\numberline {6.4}Deployment}{16}
+\contentsline {section}{\numberline {6.5}SCM}{16}

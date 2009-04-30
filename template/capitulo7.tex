@@ -1,0 +1,44 @@
+\chapter{Desarrollo de la aplicación.}
+
+\section{Desarrollo Web.}
+\subsection{Configuración.}
+\subsection{Ambientes.}
+\subsection{Especificaciones.}
+\subsection{Definición de modelos.}
+\subsection{Daemon - \emph{Stock Getter}.}
+\subsection{Construcción de tests.}
+\subsection{Desarrollo del núcleo.}
+
+
+\section{Desarrollo Contenidos 3D}
+La arquitectura dentro de una escena en Unity3D consiste en un conjunto de GameObjects que interactúan entre si para mostrar un evento/animación en una escena; Dichos objetos interactúan entre si, basándose en una jerarquía de objetos, donde la traslación/rotación/escalamiento de un padre afecta directamente a los hijos.
+
+ACA MOSTRAR LA INTERFAZ DE UNITY CON LOS PADRES / HIJOS
+
+Se decidió entonces dividir el programa en 3 grandes modulos.
+ACA VA IMAGEN GRILLA DE LOS MODUlOS
+\subsection{Módulo de detección de datos de información del exterior:}
+
+\subsection{Módulo de renderizado de escena(Grapher):}
+
+\subsection{Modulo de información de Objetos:}
+
+
+
+Basicamente 4 tipos de gráficos fueron los que se decidieron desarrollar y fueron: Barras, Espiral, Superficie y el `Campo'. cada gráfica ofrece información relevante para cada tipo de variable que se esta analizando. 
+
+Barras: Son las típicas barras que se pueden encontrar en cualquier visualizacion de acciones, pero con el valor agregado de que permiten ver el comportamiento de una o varias acciones a través del tiempo.
+
+Espiral: Este tipo de gráfica permite comparar rendimientos de varias acciones por medio del porcentaje de variación de cada una en un momento determinado, es el único tipo de grafico que no permite comparar acciones a través del tiempo, pues lo único que interesa en este gráfico, es determinar de una manera fácil y rápida que acciones estan generando mas rentabilidad, cuales estan perdiendo y cuales estan invariantes en un tiempo determinado.
+
+Superficie: Este tipo de gráfico también compara rentabilidades de dos o mas acciones a través del tiempo con respecto a la mayor/menor  rentabilidad de todas las acciones en un momento determinado  y va generando una superficie 3D que describe el comportamiento de la bolsa a travez de un periodo de tiempo.
+
+Campo: Es el tipo de gráfico mas complejo que se realizó, pues en este gráfico comparamos variables de cantidad Vs Rentabilidad a travez del tiempo, entonces a través de estas variables podemos inferir si una accion se esta tranzando en la bolsa en mucha cantidad o no y si dicha acción esta siendo rentable; Este grafico provee una serie de "Zonas" que ayudan al usuario a determinar las acciones en que estado se encuentran en un momento determinado, y asi inferir facilmente si la acción esta generando perdidas o ganancias.
+
+ 
+
+\section{Desarrollo protocolo de comunicación.}
+
+\section{Deployment}
+
+\section{SCM}
