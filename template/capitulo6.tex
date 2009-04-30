@@ -63,11 +63,11 @@ En pocas palabras, muchos de los motores de renderizado 3D escritos para trabaja
 
 \emph{Unity3D} por su parte es un motor escrito en C/C++ que trabaja con \emph{Mono}\footnote{\textbf{Mono} es el nombre de un proyecto de código abierto iniciado por Ximian y actualmente impulsado por Novell (tras la adquisición de Ximian) para crear un grupo de herramientas libres, basadas en GNU/Linux y compatibles con .NET según lo especificado por el ECMA.} y \emph{PhysX}\footnote{\textbf{PhysX} es un chip y un kit de desarrollo diseñados para llevar a cabo cálculos físicos muy complejos. Conocido anteriormente como la SDK de NovodeX, fue originalmente diseñada por AGEIA y tras la adquisición de AGEIA, es actualmente desarrollado por Nvidia e integrado en sus chip gráficos más recientes.} para crear código multiplataforma, haciendo así practicamente transparente generar ejecutables tanto para MacOSX, Windows, widgets y exportar para Web.\\
 
-Gracias a Mono, es fácil generar ejecutables multiplataforma debido a la arquitectura con la que dicho \emph{framework} trabaja.Figura\ref{fig:mono}\\
+Gracias a Mono, es fácil generar ejecutables multiplataforma debido a la arquitectura con la que dicho \emph{framework} trabaja. Figura\ref{fig:mono}\\
 
 \begin{figure}[h]
 	\centering
-		\includegraphics[scale=0.7]{Mono.PNG}
+		\includegraphics[scale=0.6]{Mono.PNG}
 		\caption{Arquitectura general del \emph{framework} Mono}
 	\label{fig:mono}
 \end{figure}
@@ -76,4 +76,10 @@ Gracias a Mono, es fácil generar ejecutables multiplataforma debido a la arquit
 Por otro lado, \emph{Unity3D} también se aprovecha de la capacidad del motor de física \emph{PhysX} para llevar a cabo cálculos complejos para así alivianar la carga de procesamiento que conlleva un juego/aplicación 3D.\\
 
 Cuando el Motor exporta contenido a Web, dicho contenido se puede comunicar facilmente con \emph{Javascript}, permitiendo así entablar un puente de comunicaciones con \emph{Rails} a través de \emph{Javascript}, factor clave para la visualización de los datos que tiene la aplicación.\\
+
+\section{¿Cómo se complementan estas dos tecnologías?}
+
+Como se justificó en las secciones anteriores, tanto \emph{Rails} como \emph{Unity3D} son herramientas sobre las que se puede desarrollar efectivamente tanto aplicaciones Web convencionales, así como aplicaciones 3D, pero era necesario que ambas tuvieran la forma de recibir y enviar mensajes a través de un protocolo de comunicación, de tal manera que fuera transparente una llamada de una aplicación a la otra como si se tratase de una llamada local.\\
+
+Dicho protocolo de comunicación, fue soportado por \textbf{Javascript} puesto que \emph{Rails} cuenta con una librería bien soportada para convertir datos nativos de \emph{Ruby} a \emph{Javascript} y ya que el contenido generado por \emph{Unity3D} tiene una API accequible escrita en \emph{Javascript} para controlar el estado del contenido dentro del browser, haciendo entonces a \emph{Javascript} la herramienta óptima para comunicar ambas tecnologias.\\
 
