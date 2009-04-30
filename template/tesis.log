@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  29 APR 2009 18:26
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  29 APR 2009 19:43
 entering extended mode
  %&-line parsing enabled.
 **tesis.tex
@@ -739,102 +739,126 @@ Underfull \vbox (badness 2698) has occurred while \output is active []
 (./capitulo6.tex [8]
 Cap\'{\i }tulo 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-
- []
-
-<mvc.PNG, id=78, 1403.2425pt x 625.33624pt>
-File: mvc.PNG Graphic file (type png)
- <use mvc.PNG>
-Overfull \hbox (5.80977pt too wide) in paragraph at lines 10--11
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
 [9
 
-] [10 <./mvc.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
-
- []
-
-<Mono.PNG, id=93, 602.25pt x 394.47375pt>
-File: Mono.PNG Graphic file (type png)
- <use Mono.PNG>
-Overfull \hbox (76.57211pt too wide) in paragraph at lines 65--66
+] <mvc.PNG, id=82, 1403.2425pt x 625.33624pt>
+File: mvc.PNG Graphic file (type png)
+ <use mvc.PNG>
+Overfull \hbox (5.80977pt too wide) in paragraph at lines 15--16
  [][] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+[10 <./mvc.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
  []
 
-[12]) (./capitulo11.tex [13 <./Mono.PNG (PNG copy)>] [14
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
-]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+<Mono.PNG, id=96, 602.25pt x 394.47375pt>
+File: Mono.PNG Graphic file (type png)
+ <use Mono.PNG>
+Overfull \hbox (76.57211pt too wide) in paragraph at lines 70--71
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+) (./capitulo11.tex [13 <./Mono.PNG (PNG copy)>] [14]
 Cap\'{\i }tulo 6.
-) (./capitulo22.tex [15] [16
+) (./capitulo22.tex [15
+
+] [16
 
 ]
 Cap\'{\i }tulo 7.
-[17]) (./capitulo33.tex [18]
+
+LaTeX Warning: Citation `Chaitin:ElegantLisp' on page 17 undefined on input lin
+e 25.
+
+
+LaTeX Warning: Citation `ulf:4fold' on page 17 undefined on input line 29.
+
+
+LaTeX Warning: Citation `cardelli:extensiblesyntax' on page 17 undefined on inp
+ut line 36.
+
+[17]
+
+LaTeX Warning: Citation `GuySteele:grow' on page 18 undefined on input line 43.
+
+
+
+LaTeX Warning: Citation `Swierstra:Macros' on page 18 undefined on input line 4
+5.
+
+
+LaTeX Warning: Citation `cardelli:extensiblesyntax' on page 18 undefined on inp
+ut line 46.
+
+
+LaTeX Warning: Citation `Aasa:UDS' on page 18 undefined on input line 47.
+
+) (./capitulo33.tex [18]
 Cap\'{\i }tulo 8.
+
+LaTeX Warning: Citation `pierce:TAPL' on page 19 undefined on input line 6.
+
 [19
 
 ]
@@ -859,11 +883,21 @@ Overfull \hbox (3.16724pt too wide) in paragraph at lines 102--105
 la mis-ma ex-pre-si^^Son aritm^^Seti-
  []
 
+
+LaTeX Warning: Citation `henk:lambda' on page 21 undefined on input line 109.
+
 [21]
-Overfull \hbox (3.44496pt too wide) in paragraph at lines 163--165
-[]\OT1/cmr/m/n/10 Por prac-ti-ci-dad se-gui-re-mos cier-tas con-ven-cio-nes no-
-ta-cio-na-les des-cri-tas en [[]]. 
- []
+
+LaTeX Warning: Citation `selinger:lambda' on page 22 undefined on input line 16
+4.
+
+
+LaTeX Warning: Citation `selinger:lambda' on page 22 undefined on input line 18
+2.
+
+
+LaTeX Warning: Citation `leeuwen:handbook' on page 22 undefined on input line 1
+88.
 
 [22]) (./capitulo44.tex [23] [24
 
@@ -894,30 +928,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--76
 
  []
 
-[26]) (./capitulo55.tex [27] [28
+[26]
+
+LaTeX Warning: Citation `WStepByStep:Martin' on page 27 undefined on input line
+ 79.
+
+) (./capitulo55.tex [27] [28
 
 ]
 Cap\'{\i }tulo 10.
 ) [29] [30
 
-] (./tesis.bbl
-Underfull \hbox (badness 6078) in paragraph at lines 62--68
-\OT1/cmr/m/n/10 l^^S^^Pnea $\OT1/cmtt/m/n/10 http : / / www . mathstat . dal . 
-ca / []selinger / papers / lambdanotes .
- []
+] (./tesis.bbl) [31
 
-[31
-
-]) [32] (./tesis.aux)
+] (./tesis.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 4462 strings out of 493876
- 53802 string characters out of 1150567
- 147116 words of memory out of 3000000
- 7616 multiletter control sequences out of 10000+50000
+ 4459 strings out of 493876
+ 53757 string characters out of 1150567
+ 147067 words of memory out of 3000000
+ 7613 multiletter control sequences out of 10000+50000
  15499 words of font info for 62 fonts, out of 3000000 for 5000
  716 hyphenation exceptions out of 8191
  27i,15n,27p,1358b,369s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -940,9 +976,9 @@ ocal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy7.pfb></usr/local/texli
 ve/2008/texmf-dist/fonts/type1/bluesky/cm/cmti10.pfb></usr/local/texlive/2008/t
 exmf-dist/fonts/type1/bluesky/cm/cmti8.pfb></usr/local/texlive/2008/texmf-dist/
 fonts/type1/bluesky/cm/cmtt10.pfb>
-Output written on tesis.pdf (44 pages, 376114 bytes).
+Output written on tesis.pdf (43 pages, 372935 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
+ 230 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

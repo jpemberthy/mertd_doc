@@ -127,6 +127,10 @@ Es por esto que es pertinente el desarrollo de una aplicación que sea portable 
 
 6. Solución.
 
+Teniendo clara una necesidad y/o problema a suplir/solucionar, se analizaron varias tecnologías y patrones de desarrollo que permitirían llevar a cabo el desarrollo de la aplicación y consecuentemente su puesta en marcha.
+
+Las herramientas seleccionadas fueron, \textbf{Ruby on Rails}\footnote{http://rubyonrails.org/} para desarrollar la aplicación web, pensando en un metodología ágil de desarrollo, y que a su vez permitiera que los contenidos fueran fáciles de integrar, por otro lado, se elegió \textbf{Unity3D}\footnote{http://unity3d.com/} por su capacidad de generar contenidos 3D que se apoyan directamente de las tarjetas aceleradoras de video para visualizar dichas escenas, además cuenta con una API que facilita exportar contenidos para que sean visibles en un navegador.
+
 6.1 Porque Ruby on rails?
 
 Para responder a esta pregunta, es necesario primero definir a Ruby on Rails, llamado tambien Rails ó RoR, es un framework que hace que sea más fácil desarrollar, implementar, y mantener aplicaciones web. Durante los meses que siguieron a su primera liberación, Rails paso de ser un juguete desconocido a un fenomeno mundial. Ha ganado premios, y más importante aún, se ha convertido en el framework de preferencia para la implementación de cierto conjunto de las llamadas aplicaciones web 2.0\cite{1204891}.
@@ -151,6 +155,8 @@ class Record < ActiveRecord::Base
   validates_numericality_of :price, :amount, :greater_than => 0
   validates_numericality_of :variation
 
+end
+
 END
 
 Finalmente, no se pretendía manipular la base de datos directamente, es decir, con código nativo del motor de bases de datos, sino sacar provecho de técnicas como \footnote{ORM}, en las que las tablas de las bases de datos son mapeadas a clases, los registros de las tablas son mapeados como objetos, y consecuentemente los campos, se mapean como atributos de los objetos, mientras que existen metodos de clases que se encargan de realizar operaciones a nivel de tablas, dejando como opcional la utilización de código SQL dentro de la aplicación, una vez más Rails suplió esta necesidad con \footnote{ActiveRecord} ó \footnote{Datamapper}.
@@ -160,7 +166,6 @@ Finalmente, no se pretendía manipular la base de datos directamente, es decir, 
 6.3 Como se complementan estas dos tecnologias?.
 
 7. Desarrollo de la aplicacion.
-
 
 7.x SCM
 
