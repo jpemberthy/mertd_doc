@@ -17,13 +17,15 @@
 \contentsline {subsection}{\numberline {6.1.1}Especificaciones.}{15}
 \contentsline {subsection}{\numberline {6.1.2}Definici\IeC {\'o}n de modelos.}{16}
 \contentsline {subsection}{\numberline {6.1.3}Configuraci\IeC {\'o}n.}{18}
-\contentsline {subsection}{\numberline {6.1.4}Ambientes.}{18}
-\contentsline {subsection}{\numberline {6.1.5}Daemon - \emph {Stock Getter}.}{18}
-\contentsline {subsection}{\numberline {6.1.6}\emph {TDD Cycle}}{18}
-\contentsline {section}{\numberline {6.2}Desarrollo Contenidos 3D}{18}
-\contentsline {subsection}{\numberline {6.2.1}M\IeC {\'o}dulo de detecci\IeC {\'o}n de datos de informaci\IeC {\'o}n del exterior:}{18}
-\contentsline {subsection}{\numberline {6.2.2}M\IeC {\'o}dulo de renderizado de escena(Grapher):}{18}
-\contentsline {subsection}{\numberline {6.2.3}Modulo de informaci\IeC {\'o}n de Objetos:}{18}
-\contentsline {section}{\numberline {6.3}Desarrollo protocolo de comunicaci\IeC {\'o}n.}{19}
-\contentsline {section}{\numberline {6.4}Deployment}{19}
-\contentsline {section}{\numberline {6.5}SCM}{19}
+\contentsline {subsubsection}{Servidor Web - \emph {Clusters}}{18}
+\contentsline {subsubsection}{Base de datos}{20}
+\contentsline {subsection}{\numberline {6.1.4}Ambientes.}{20}
+\contentsline {subsection}{\numberline {6.1.5}Daemon - \emph {Stock Getter}.}{20}
+\contentsline {subsection}{\numberline {6.1.6}\emph {TDD Cycle}}{20}
+\contentsline {section}{\numberline {6.2}Desarrollo Contenidos 3D}{20}
+\contentsline {subsection}{\numberline {6.2.1}M\IeC {\'o}dulo de detecci\IeC {\'o}n de datos de informaci\IeC {\'o}n del exterior:}{20}
+\contentsline {subsection}{\numberline {6.2.2}M\IeC {\'o}dulo de renderizado de escena(Grapher):}{20}
+\contentsline {subsection}{\numberline {6.2.3}Modulo de informaci\IeC {\'o}n de Objetos:}{20}
+\contentsline {section}{\numberline {6.3}Desarrollo protocolo de comunicaci\IeC {\'o}n.}{21}
+\contentsline {section}{\numberline {6.4}Deployment}{21}
+\contentsline {section}{\numberline {6.5}SCM}{21}

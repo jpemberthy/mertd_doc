@@ -67,6 +67,78 @@ INSERT INTO titles
 Cabe resaltar que siempre será más rápido ejecutar directamente el código nativo interpretado por el motor de base de datos, pero en éste caso se opto por la claridad de código y la manipulación de objetos pues no se requirió diseñar consultas que hicieran que la diferencia de tiempos entre uno y otro método fuera considerable.
 
 \subsection{Configuración.}
+
+Al tratarse de una aplicación web, la configuración estuvo enfocada en la determinación de que servidores web utilizar, y que motor de bases de datos, así como la integración de estos con la aplicación.
+
+\subsubsection{Servidor Web - \emph{Clusters}}
+
+En el lado de los servidores, se eligió \textbf{Mongrel}\footnote{Es una libreria HTTP y un servidor web para aplicaciones escritas en \emph{Ruby}. Una característica de \emph{Mongrel} es que usa HTTP plano, en vez de \emph{FastCGI} ó \emph{SCGI}, para comunicarse con otros servidores que podrían estar una capa encima de éste.}, encargado de correr la aplicación web a modo de \emph{clusters},\footnote{Los \emph{Mongrel Clusters} son un conjunto de procesos de \emph{Mongrel} con una configuración común que pueden ser manejados por un servidor \emph{Proxy}} éstos interpretan directamente el código escrito en \emph{Ruby} y responden a peticiones HTPP, cuándo se utiliza este esquema se necesita incluir un \textbf{Proxy Sever}\footnote{Es un servidor que intercepta las conexiones de red que un cliente hace a un servidor de destino para actuar como enrutador.} en la primera capa del servidor web, encargado de enrutar las peticiones HTTP a un determinado \emph{cluster} dependiendo del estado de los mismos, para el desarrollo de la aplicación se eligió \textbf{Nginx}\footnote{http://nginx.net/} como servidor proxy.\\
+
+Los siguientes archivos, representan la configuración actual de la aplicación, tanto para \emph{Mongrel} asi como para \emph{Nginx}\\
+
+Archivo de configuración para los \emph{clusters}, el número de \emph{clusters} esta determinado por el valor de la variable \emph{servers}, el primer \emph{cluster} corre en el puerto especificado en la variable \emph{port}, los puertos de los n-1 restantes \emph{clusters} son determinados incrementando en 1 el valor del puerto del último \emph{cluster} que tenga puerto asignado, en este caso, el primer \emph{cluster} corre en el puerto 8000, y el segundo en el puerto 8001.
+
+\begin{verbatim}
+  port: "8000" 
+  cwd: /home/mertd/www/mertd/current/
+  log_file: log/mongrel.log 
+  environment: production 
+  address: 127.0.0.1 
+  pid_file: log/mongrel.pid 
+  servers: 2
+  docroot: public 
+  user: mertd
+  group: mertd 
+\end{verbatim}
+
+\begin{verbatim}
+	upstream mertd {
+		/* Cada uno de los mongrel clusters, en este caso dos */
+		/* Corriendo en los puertos 8000 y 8001 respectivamente */
+		server 127.0.0.1:8000; 
+		server 127.0.0.1:8001;
+	}
+
+	server {
+	    listen 80;
+	    server_name 127.0.0.1;
+	    client_max_body_size 25M;
+
+	    root /home/mertd/www/mertd/current/public/;
+	    access_log  /home/mertd/www/mertd/current/log/access.log  main;
+
+	    if (-f $document_root/system/maintenance.html) {
+	      rewrite  ^(.*)$  /system/maintenance.html last;
+	      break;
+	    }
+
+	    location / {
+	      proxy_set_header  X-Real-IP  $remote_addr;
+	      proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
+	      proxy_set_header Host $http_host;
+	      proxy_redirect false;
+	      proxy_max_temp_file_size 0;
+	      if (-f $request_filename) {
+	        break;
+	      }
+	      if (-f $request_filename/index.html) {
+	        rewrite (.*) $1/index.html break;
+	      }
+	      if (!-f $request_filename) {
+	        proxy_pass http://mertd;
+	        break;
+	      }
+	    }
+
+	    error_page   500 502 503 504  /500.html;
+	    location = /500.html {
+	    root /home/mertd/www/mertd/current/public;
+	    }
+	 }
+\end{verbatim}
+
+\subsubsection{Base de datos}
+
 \subsection{Ambientes.}
 \subsection{Daemon - \emph{Stock Getter}.}
 \subsection{\emph{TDD Cycle}}
