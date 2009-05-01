@@ -153,7 +153,7 @@ development:
   host: localhost	
 \end{verbatim}
 
-\emph{Rails} cuenta con tres tipos de ambientes que se tocarán más a fondo en la siguiente sección, las líneas anteriores corresponden a la configuración de la base de datos para el ambiente de \emph{desarrollo}, a partir de ese momento, la base de datos puede ser creada, modificada, o eliminada sin necesidad de utilizar directamente código SQL, la base de datos de \emph{Mertd} fue creada siguiendo un patrón de migraciones\cite{ror:cookbook}\footnote{La base de datos es modificada como si se tratase de una máquina de estados, cada migración agrega, modifica, elimina o actualiza la estructura de la base de datos} para facilitar escabilidad entre base de datos y aplicación.\\
+\emph{Rails} cuenta con tres tipos de ambientes, las líneas anteriores corresponden a la configuración de la base de datos para el ambiente de \emph{desarrollo} los otros dos son: \emph{producción} (la versión que utilizan los usuarios) y \emph{test}, a partir de ese momento, la base de datos puede ser creada, modificada, o eliminada sin necesidad de utilizar directamente código SQL, la base de datos de \emph{Mertd} fue creada siguiendo un patrón de migraciones\cite{ror:cookbook}\footnote{La base de datos es modificada como si se tratase de una máquina de estados, cada migración agrega, modifica, elimina o actualiza la estructura de la base de datos} para facilitar escabilidad entre base de datos y aplicación.\\
 
 A modo de ejemplo, las siguientes sentencias recrean la creación de la base de datos, y el primer modelo de la aplicación siguiendo el patrón de migraciones.\\
 
@@ -205,35 +205,95 @@ Finalmente para actualizar la base de datos se corre la migración mediante una 
   rake db:rollback #elimina la tabla usuarios ("users")
 \end{verbatim}
 
-\subsection{Ambientes.}
 \subsection{Daemon - \emph{Stock Getter}.}
 \subsection{\emph{TDD Cycle}}
 
 \section{Desarrollo Contenidos 3D}
-La arquitectura dentro de una escena en Unity3D consiste en un conjunto de GameObjects que interactúan entre si para mostrar un evento/animación en una escena; Dichos objetos interactúan entre si, basándose en una jerarquía de objetos, donde la traslación/rotación/escalamiento de un padre afecta directamente a los hijos.
+La arquitectura dentro de una escena en \textbf{Unity3D} consiste en un conjunto de \textbf{GameObjects} que interactúan entre si para mostrar un evento/animación en una escena; Dichos objetos se comunican, basándose en una jerarquía de objetos, donde la traslación/rotación/escalamiento de un padre afecta directamente a los hijos Figura\ref{fig:jerarq}.\\
 
-ACA MOSTRAR LA INTERFAZ DE UNITY CON LOS PADRES / HIJOS
 
-Se decidió entonces dividir el programa en 3 grandes modulos.
-ACA VA IMAGEN GRILLA DE LOS MODUlOS
-\subsection{Módulo de detección de datos de información del exterior:}
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.5]{parenting.png}
+		\caption{Jerarquía de Objetos en Unity3D.}
+	\label{fig:jerarq}
+\end{figure}
 
-\subsection{Módulo de renderizado de escena(Grapher):}
+En este caso, si se rotara/escalára/moviera el objeto `Coords', a su vez a los objetos que se encuentran dentro de `Coords' también se les aplicaría la transformación.\\
+
+Se decidió entonces dividir el programa en 3 grandes módulos principales para facilitar tanto desarrollo como mantenimiento de los contenidos 3D, Dichos modulos le envian información a los otros para renderizar los contenidos 3D. Figura\ref{fig:modules}\\
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.5]{ArquitecturaUnity.png}
+		\caption{Arquitectura de los contenidos 3D}
+	\label{fig:modules}
+\end{figure}
+
+
+\subsection{Módulo de detección de datos e información del exterior:}
+Este módulo se encarga de recibir la información que tiene cada acción que proviene desde la aplicación Web parseándola y organizándola para que los otros módulos de la aplicación la entiendan; posteriormente carga en memoria dicha información para así utilizarla apropiadamente en el tipo de gráfico que se esta renderizando.\\
+
+Este módulo solo es usado cada vez que se le inyectan datos a los contenidos 3D ó cada vez que el usuario pide cambiar el tipo de gráfica a mostrar.\\
 
 \subsection{Modulo de información de Objetos:}
+Este módulo se encarga de recolectar la información almacenada en memoria y cargar para cada objeto que se va a mostrar en la escena, la información pertinente del mismo.\\
+
+Este módulo se encarga del manejo de menús y todo lo que tiene que ver con la interacción del usuario con la aplicación, es llamado constantemente cada vez que el usuario desea averiguar información relevante de una acción, y  se comunica una sola vez con el módulo de detección de datos e información del exterior.\\
+
+\subsection{Módulo de renderizado de escena (\emph{Grapher}):}
+
+Finalmente, éste módulo se encarga de lo que es el dibujado de la información proveniente del modulo de información de objetos; éste módulo nunca se entiende con el módulo de datos e información del exterior.\\
+ 
+Para graficar la escena, se recorren todos los nodos que posee el módulo de información y se gráfica (dependiendo del tipo de gráfico) cada nodo.\\
+
+
+Cabe aclarar que se debe hacer un `vaciado de hijos' del objeto \emph{Grapher} cada vez que se visualizan contenidos, para no introducir \textbf{leaks}\footnote{Ocurre cuando un bloque de memoria reservada no es liberada en un programa de computación. Comúnmente ocurre porque se pierden todas las referencias a esa área de memoria antes de haberse liberado. Dependiendo de la cantidad de memoria perdida y el tiempo que el programa siga en ejecución, este problema puede llevar al agotamiento de la memoria disponible en la máquina.} de memoria.\\
 
 
 
-Basicamente 4 tipos de gráficos fueron los que se decidieron desarrollar y fueron: Barras, Espiral, Superficie y el `Campo'. cada gráfica ofrece información relevante para cada tipo de variable que se esta analizando. 
+Basicamente 4 tipos de gráficos fueron los que se decidieron desarrollar: Barras, Espiral, Superficie y el Campo. Cada gráfica ofrece información relevante para cada tipo de variable que se esta analizando. \\
 
-Barras: Son las típicas barras que se pueden encontrar en cualquier visualizacion de acciones, pero con el valor agregado de que permiten ver el comportamiento de una o varias acciones a través del tiempo.
+\textbf{Barras} [\ref{fig:Barras}:] Son las típicas barras que se pueden encontrar en cualquier visualización de acciones, pero con el valor agregado de que permiten ver el comportamiento de una o varias acciones a través del tiempo.\\
 
-Espiral: Este tipo de gráfica permite comparar rendimientos de varias acciones por medio del porcentaje de variación de cada una en un momento determinado, es el único tipo de grafico que no permite comparar acciones a través del tiempo, pues lo único que interesa en este gráfico, es determinar de una manera fácil y rápida que acciones estan generando mas rentabilidad, cuales estan perdiendo y cuales estan invariantes en un tiempo determinado.
+Estas barras muestran variables como el porcentaje de variación, Cantidad negociada, y Precio; Dichos valores son trabajados de modo percentil para poder comparar las otras acciones que tienen precios diferentes, pues una acción puede valer \$5 mientras que otra puede valer \$20000.\\
 
-Superficie: Este tipo de gráfico también compara rentabilidades de dos o mas acciones a través del tiempo con respecto a la mayor/menor  rentabilidad de todas las acciones en un momento determinado  y va generando una superficie 3D que describe el comportamiento de la bolsa a travez de un periodo de tiempo.
 
-Campo: Es el tipo de gráfico mas complejo que se realizó, pues en este gráfico comparamos variables de cantidad Vs Rentabilidad a travez del tiempo, entonces a través de estas variables podemos inferir si una accion se esta tranzando en la bolsa en mucha cantidad o no y si dicha acción esta siendo rentable; Este grafico provee una serie de "Zonas" que ayudan al usuario a determinar las acciones en que estado se encuentran en un momento determinado, y asi inferir facilmente si la acción esta generando perdidas o ganancias.
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.5]{Barras.png}
+		\caption{Ejemplo de Visualización por Barras.}
+	\label{fig:Barras}
+\end{figure}
 
+
+\textbf{Espiral} [\ref{fig:Espiral}]: Este tipo de gráfica permite comparar rendimientos de varias acciones por medio del porcentaje de variación de cada una en un momento determinado, es el único tipo de gráfico que no permite comparar acciones a través del tiempo, pues lo único que interesa en este gráfico, es determinar de una manera fácil y rápida que acciones están generando mas rentabilidad, cuales están perdiendo y cuales están invariantes en un tiempo dado.\\
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.5]{Espiral.png}
+		\caption{Ejemplo de Visualización por Espiral.}
+	\label{fig:Espiral}
+\end{figure}
+
+
+\textbf{Superficie} [\ref{fig:Superficie}]: Este tipo de gráfico también compara rentabilidades de dos o mas acciones a través del tiempo, con respecto a la mayor/menor rentabilidad de todas las acciones en un momento determinado  mientras que genera una superficie 3D que describe el comportamiento de la bolsa a medida que transcurre el tiempo.\\
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.5]{Superficie.png}
+		\caption{Ejemplo de Visualización por superficies de rentabilidad.}
+	\label{fig:Superficie}
+\end{figure}
+
+\textbf{Campo} [\ref{fig:Campo}]: Es el tipo de gráfico mas complejo que se realizó, pues en este gráfico se comparan variables de Cantidad Vs Rentabilidad a través del tiempo, entonces por medio de estas variables se puede inferir si una acción se esta tranzando en la bolsa en mucha cantidad o no y si dicha acción esta siendo rentable; Este gráfico provee una serie de `zonas' que ayudan al usuario a entender el estado de las acciones en un momento dado, y así inferir facilmente si la acción esta generando pérdidas o ganancias y si esta muy o poco demandada\\
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.5]{Campo.png}
+		\caption{Ejemplo de Visualización por Campos.}
+	\label{fig:Campo}
+\end{figure}
  
 
 \section{Desarrollo protocolo de comunicación.}

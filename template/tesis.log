@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  1 MAY 2009 15:14
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  1 MAY 2009 16:44
 entering extended mode
  %&-line parsing enabled.
 **tesis.tex
@@ -638,9 +638,9 @@ Package spanish Warning: Replacing `OT1/cmr/bx/sc' by
 \tf@toc=\write3
 \openout3 = `tesis.toc'.
 
- (./glosario.tex [3] [4] [5
+ (./glosario.tex [3] [4
 
-] [6] [7]) (./capitulo0.tex [8]
+] [5] [6] [7]) (./capitulo0.tex [8]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -914,12 +914,138 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--200
  []
 
 
-Underfull \vbox (badness 5490) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
- [21])
-[22] [23] [24
+ []
 
-] (./tesis.bbl) [25
+[21] <parenting.png, id=128, 240.9pt x 414.54875pt>
+File: parenting.png Graphic file (type png)
+ <use parenting.png>
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
+ []
+
+<ArquitecturaUnity.png, id=129, 770.88pt x 433.62pt>
+File: ArquitecturaUnity.png Graphic file (type png)
+
+<use ArquitecturaUnity.png>
+Overfull \hbox (40.43906pt too wide) in paragraph at lines 228--229
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+
+ []
+
+[22 <./parenting.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+[23 <./ArquitecturaUnity.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+<Barras.png, id=136, 700.6175pt x 500.87125pt>
+File: Barras.png Graphic file (type png)
+ <use Barras.png>
+Overfull \hbox (5.30789pt too wide) in paragraph at lines 264--265
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+
+ []
+
+
+Underfull \vbox (badness 1082) has occurred while \output is active []
+
+ [24 <./Barras.png (PNG copy)>] <Espiral.png, id=140, 686.565pt x 395.4775pt>
+File: Espiral.png Graphic file (type png)
+
+<use Espiral.png>
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+
+ []
+
+<Superficie.png, id=141, 702.625pt x 497.86pt>
+File: Superficie.png Graphic file (type png)
+ <use Superficie.png>
+Overfull \hbox (6.31163pt too wide) in paragraph at lines 284--285
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
+
+ []
+
+<Campo.png, id=142, 701.62125pt x 496.85625pt>
+File: Campo.png Graphic file (type png)
+ <use Campo.png>
+Overfull \hbox (5.80975pt too wide) in paragraph at lines 293--294
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25 <./Espiral.png (PNG copy)>] [26 <./Superficie.png (PNG copy)>] [27 <./Camp
+o.png (PNG copy)>] [28
+
+] (./tesis.bbl) [29
 
 ] (./tesis.aux)
 
@@ -927,13 +1053,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4402 strings out of 493876
- 53478 string characters out of 1150567
- 144631 words of memory out of 3000000
- 7565 multiletter control sequences out of 10000+50000
+ 4434 strings out of 493876
+ 53997 string characters out of 1150567
+ 144697 words of memory out of 3000000
+ 7590 multiletter control sequences out of 10000+50000
  16217 words of font info for 64 fonts, out of 3000000 for 5000
  716 hyphenation exceptions out of 8191
- 27i,8n,27p,1358b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,27p,1358b,413s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx10.pfb></usr/l
 ocal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx12.pfb></usr/local/texl
 ive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx7.pfb></usr/local/texlive/2008/t
@@ -949,9 +1075,9 @@ exlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr7.pfb></usr/local/texlive/2008
 pe1/bluesky/cm/cmsy10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/blues
 ky/cm/cmti10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmt
 i8.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmtt10.pfb>
-Output written on tesis.pdf (37 pages, 589252 bytes).
+Output written on tesis.pdf (41 pages, 775331 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
+ 214 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
