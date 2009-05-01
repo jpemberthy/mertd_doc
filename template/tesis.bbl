@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{ror:cookbook}
+Rob Orsini.
+\newblock {\em Rails Cookbook}.
+\newblock Number 88416316. 2007.
+
 \bibitem{RepEEc:col:piedrahita}
 Francisco Piedrahita.
 \newblock Retazos de historia.
@@ -15,7 +20,7 @@ Maribel~Serna Rodríguez and Andrés Mauricio~Mora Cuartas.
 \bibitem{ror:awdwr}
 Dave Thomas, David Hansson, Leon Breedt, Mike Clark, James~Duncan Davidson,
   Justin Gehtland, and Andreas Schwarz.
-\newblock Agile web development with rails.
-\newblock Technical report, 2006.
+\newblock {\em Agile Web Development with Rails}.
+\newblock 2006.
 
 \end{thebibliography}

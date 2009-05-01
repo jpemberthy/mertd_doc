@@ -34,7 +34,7 @@ El modelo entidad relación final, y que representa la estructura de la base de 
 
 \begin{figure}[h]
 	\centering
-		\includegraphics[scale=0.4]{erb_mertd.jpg}
+		\includegraphics[scale=0.5]{erb_mertd.jpg}
 		\caption{Modelo Entidad Relación - Mertd(Mercado 3D)}
 	\label{fig:erd}
 \end{figure}
@@ -76,7 +76,7 @@ En el lado de los servidores, se eligió \textbf{Mongrel}\footnote{Es una librer
 
 Los siguientes archivos, representan la configuración actual de la aplicación, tanto para \emph{Mongrel} asi como para \emph{Nginx}\\
 
-Archivo de configuración para los \emph{clusters}, el número de \emph{clusters} esta determinado por el valor de la variable \emph{servers}, el primer \emph{cluster} corre en el puerto especificado en la variable \emph{port}, los puertos de los n-1 restantes \emph{clusters} son determinados incrementando en 1 el valor del puerto del último \emph{cluster} que tenga puerto asignado, en este caso, el primer \emph{cluster} corre en el puerto 8000, y el segundo en el puerto 8001.
+Archivo de configuración para los \emph{clusters}, el número de \emph{clusters} esta determinado por el valor de la variable \emph{servers}, el primer \emph{cluster} corre en el puerto especificado en la variable \emph{port}, los puertos de los n-1 restantes \emph{clusters} son determinados incrementando en 1 el valor del puerto del último \emph{cluster} al que se le haya asignado un puerto, en este caso, el primer \emph{cluster} corre en el puerto 8000, y el segundo en el puerto 8001.
 
 \begin{verbatim}
   port: "8000" 
@@ -90,6 +90,8 @@ Archivo de configuración para los \emph{clusters}, el número de \emph{clusters
   user: mertd
   group: mertd 
 \end{verbatim}
+
+Archivo de configuración de \emph{Nginx}
 
 \begin{verbatim}
 	upstream mertd {
@@ -138,6 +140,70 @@ Archivo de configuración para los \emph{clusters}, el número de \emph{clusters
 \end{verbatim}
 
 \subsubsection{Base de datos}
+
+La integración de la aplicación con la base de datos, es uno de los aspectos en los que \emph{Rails} saca ventaja de su filosofía CoC (\emph{Convention over Configuration}), en este punto sólo es necesario definir que motor de base de datos soportado por \emph{Rails} se utilizará y en 7 líneas de código la integración se define.
+
+\begin{verbatim}
+development: 
+  adapter: mysql 
+  encoding: utf8 
+  database: mertd_development 
+  username: root 
+  password: 
+  host: localhost	
+\end{verbatim}
+
+\emph{Rails} cuenta con tres tipos de ambientes que se tocarán más a fondo en la siguiente sección, las líneas anteriores corresponden a la configuración de la base de datos para el ambiente de \emph{desarrollo}, a partir de ese momento, la base de datos puede ser creada, modificada, o eliminada sin necesidad de utilizar directamente código SQL, la base de datos de \emph{Mertd} fue creada siguiendo un patrón de migraciones\cite{ror:cookbook}\footnote{La base de datos es modificada como si se tratase de una máquina de estados, cada migración agrega, modifica, elimina o actualiza la estructura de la base de datos} para facilitar escabilidad entre base de datos y aplicación.\\
+
+A modo de ejemplo, las siguientes sentencias recrean la creación de la base de datos, y el primer modelo de la aplicación siguiendo el patrón de migraciones.\\
+
+La siguiente tarea crea la base de datos basado en el archivo de configuración.
+
+\begin{verbatim}
+  rake db:create 
+\end{verbatim}
+
+Como se mencionó anteriormente, la base de datos se modifica basado en migraciones, las siguiente sentencia, muestra como crear y detallar el comportamiento de una migración, en este caso para crear la tabla/modelo usuarios. 
+
+\begin{verbatim}
+  script/generate migration create_users
+\end{verbatim}
+
+El script anterior genera un archivo en el que se definen las operaciones que se aplicaran a la base de datos cuando la migración sea ejecutada, la siguiente porción de código muestra el contenido de dicho archivo utilizado en \emph{Mertd}
+
+\begin{verbatim}
+class CreateUsers < ActiveRecord::Migration
+  def self.up
+    create_table "users", :force => true do |t|
+      t.column :login,                     :string, :limit => 40
+      t.column :name,                      :string, :limit => 100
+      t.column :email,                     :string, :limit => 100
+      t.column :crypted_password,          :string, :limit => 40
+      t.column :salt,                      :string, :limit => 40
+      t.column :created_at,                :datetime
+      t.column :updated_at,                :datetime
+      t.column :remember_token,            :string, :limit => 40
+      t.column :remember_token_expires_at, :datetime
+
+
+    end
+    add_index :users, :login, :unique => true
+  end
+
+  def self.down
+    drop_table "users"
+  end
+end
+\end{verbatim}
+
+Para cada migración se debe definir una tarea dependiendo si se realiza la migración o si por el contrario se esta revirtiendo una migración, la migración anterior por ejemplo, para ser revertida utiliza la sentencia \emph{drop\_table}.\\
+
+Finalmente para actualizar la base de datos se corre la migración mediante una tarea \emph{rake}\footnote{Un programa de construcción de \emph{Ruby} con características similares a \emph{make}}.
+
+\begin{verbatim}
+  rake db:migrate  #crea la tabla usuarios ("users")
+  rake db:rollback #elimina la tabla usuarios ("users")
+\end{verbatim}
 
 \subsection{Ambientes.}
 \subsection{Daemon - \emph{Stock Getter}.}

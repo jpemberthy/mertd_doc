@@ -19,13 +19,13 @@
 \contentsline {subsection}{\numberline {6.1.3}Configuraci\IeC {\'o}n.}{18}
 \contentsline {subsubsection}{Servidor Web - \emph {Clusters}}{18}
 \contentsline {subsubsection}{Base de datos}{20}
-\contentsline {subsection}{\numberline {6.1.4}Ambientes.}{20}
-\contentsline {subsection}{\numberline {6.1.5}Daemon - \emph {Stock Getter}.}{20}
-\contentsline {subsection}{\numberline {6.1.6}\emph {TDD Cycle}}{20}
-\contentsline {section}{\numberline {6.2}Desarrollo Contenidos 3D}{20}
-\contentsline {subsection}{\numberline {6.2.1}M\IeC {\'o}dulo de detecci\IeC {\'o}n de datos de informaci\IeC {\'o}n del exterior:}{20}
-\contentsline {subsection}{\numberline {6.2.2}M\IeC {\'o}dulo de renderizado de escena(Grapher):}{20}
-\contentsline {subsection}{\numberline {6.2.3}Modulo de informaci\IeC {\'o}n de Objetos:}{20}
-\contentsline {section}{\numberline {6.3}Desarrollo protocolo de comunicaci\IeC {\'o}n.}{21}
-\contentsline {section}{\numberline {6.4}Deployment}{21}
-\contentsline {section}{\numberline {6.5}SCM}{21}
+\contentsline {subsection}{\numberline {6.1.4}Ambientes.}{22}
+\contentsline {subsection}{\numberline {6.1.5}Daemon - \emph {Stock Getter}.}{22}
+\contentsline {subsection}{\numberline {6.1.6}\emph {TDD Cycle}}{22}
+\contentsline {section}{\numberline {6.2}Desarrollo Contenidos 3D}{22}
+\contentsline {subsection}{\numberline {6.2.1}M\IeC {\'o}dulo de detecci\IeC {\'o}n de datos de informaci\IeC {\'o}n del exterior:}{22}
+\contentsline {subsection}{\numberline {6.2.2}M\IeC {\'o}dulo de renderizado de escena(Grapher):}{22}
+\contentsline {subsection}{\numberline {6.2.3}Modulo de informaci\IeC {\'o}n de Objetos:}{22}
+\contentsline {section}{\numberline {6.3}Desarrollo protocolo de comunicaci\IeC {\'o}n.}{23}
+\contentsline {section}{\numberline {6.4}Deployment}{23}
+\contentsline {section}{\numberline {6.5}SCM}{23}
