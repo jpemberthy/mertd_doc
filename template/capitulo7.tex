@@ -205,8 +205,154 @@ Finalmente para actualizar la base de datos se corre la migración mediante una 
   rake db:rollback #elimina la tabla usuarios ("users")
 \end{verbatim}
 
-\subsection{Daemon - \emph{Stock Getter}.}
+\subsection{Daemon - \emph{Stock Getter}}
+
+Al ser una aplicación que necesita estar constantemente recolectando datos desde sitios externos, se hizo necesario la implementación de un Demonio ó \textbf{Daemon}\footnote{Léase \textbf{Daemon} en el glosario.} que desarrollara esta tarea, pues una implementación dentro de la aplicación web, al estar corriendo en un mismo proceso, representaría un saturamiento innecesario que podría repercutir en el rendimiento de la aplicación al procesar peticiones HTTP y consecuentemente en la experiencia del usuario.\\
+
+El \emph{Daemon}, se encarga entonces, de recolectar datos nuevos cada 20 minutos mientras que el mercado accionario se encuentre abierto, dicho mercado esta abierto, de Lunes a Vierns de 09:00am a 01:00pm en zona horaria Colombiana (GMT -5), una vez el mercado cierra, el \emph{Daemon} determina la próxima fecha en que el mercado abrirá, calcula los segundos desde el momento actual hasta esa fecha, y entra en estado `dormido' hasta que el mercado vuelva a abrir, y se repita la tarea cada 20 minutos.\\
+
+A continuación se muestra la definición del \emph{Daemon} que recoge los nuevos registros para las acciones en la aplicación. (cabe anotar que se ejectua como un proceso independiente de la aplicación y automatizado.)
+
+\begin{verbatim}
+#!/usr/bin/env ruby
+require File.expand_path(File.dirname(__FILE__)) + '/../../config/boot' 
+rails_root = File.expand_path RAILS_ROOT
+
+ENV["RAILS_ENV"] ||= "production"
+
+Dir.chdir(rails_root) # Change current directory to RAILS_ROOT 
+require "config/environment" # Start up rails
+require "stock.rb" #loads the stock library.
+
+$running = true
+Signal.trap("TERM") do 
+  $running = false
+end
+
+while($running) do
+  #makes work the production logger
+  #for debuggin purposes.
+  RAILS_DEFAULT_LOGGER.auto_flushing = 1
+  s = Stock.new
+  col_time = s.time #gets the current colombian time
+
+  if s.open?
+    #Hopefully using this statment we dont have to use a monitor.
+    ActiveRecord::Base.connection.reconnect!
+    s.parsing
+    ActiveRecord::Base.logger.info "Getting Stock info at #{col_time}.\n"
+    #lets close the logger.
+    RAILS_DEFAULT_LOGGER.auto_flushing = 1000
+    sleep 1200 #1200 secs = 20 mins.
+  else
+    if(col_time > s.close_time)
+      Record.delete_last_history_day(s)
+      ActiveRecord::Base.logger.info( 
+	          "Deleting last day records, last day => #{s.last_day}")
+    end
+    ActiveRecord::Base.logger.info "Sleeping at #{col_time}.\n"
+    RAILS_DEFAULT_LOGGER.auto_flushing = 1000
+    sleep s.secs_til_open #sleeps til next open day.
+  end
+
+end
+\end{verbatim}
+
+Al ser un proyecto con fines académicos el \emph{Daemon} no reconoce días festivos.
+
 \subsection{\emph{TDD Cycle}}
+
+Siguiendo una metodología como \textbf{TDD}(\emph{Test Driven Development} ó Desarrollo Guiado por Pruebas) se realizó el desarrollo del núcleo de la aplicación, esta práctica de programación se usa generalmente para lograr un código limpio y funcional, la idea es que se utilicen las especificaciones/requerimientos definidos anteriormente, para que sean traducidos en pruebas, cada vez que el conjunto de pruebas que definen un requerimiento pasan, se garantiza que la especificación ha sido implementada correctamente. Otro punto importante, es el de hacer pruebas pequeñas con el fin de determinar bajo que condiciones se introduce un error, ó cuando falla la aplicación.\\
+
+El ciclo entonces consiste en que para cada especificación, se debe:
+\begin{enumerate}
+\item Escribir el test antes de la implementación.
+\item Escribir la implementación.
+\item Correr el conjunto de tests.
+\item Corregir errores en caso de que la prueba falle, de otro modo, avanzar a la siguiente especificación.
+\end{enumerate}
+
+A continuación, se muestra el código para el test e implementación, de la especificación para la creación/actualización de títulos con datos válidos.\\
+
+\begin{verbatim}
+#Titles controller specification. Test File.
+
+...
+
+describe "responding to POST create" do
+
+   def do_post
+      post :create, :title => @params[:title], 
+                    :portafolio_id => @params[:portafolio_id], 
+                    :name => @params[:name]
+   end
+
+   before do
+     Portafolio.stub!(:find).and_return(@mock_portafolio)
+     @mock_stock = mock_model(StockAction, :save => true, 
+                              :name => "ALMACENES EXITO", :id => 1)
+     @params = {:title => {:quantity => 301, :initial_price => 14000.23}, 
+                :name => "Exito", :portafolio_id => 1}
+     StockAction.stub!(:find_with_short_name).with
+                      (@params[:name]).and_return(@mock_stock)
+   end
+
+   describe "receiving existing title and valid params" do
+     it "should update the title" do
+       @mock_title = mock_model(Title, :save => true, 
+                                :portafolio_id => 1, :stock_action_id => 1)
+       Title.should_receive(:find).and_return(@mock_title)
+       @mock_title.should_receive(:update_attr_average).with
+                   (@params[:title][:quantity], 
+                   @params[:title][:initial_price]).and_return(true))
+       do_post
+       response.should redirect_to(portafolio_path(@mock_portafolio))
+     end
+   end
+end
+
+...
+\end{verbatim}
+
+Con el conjunto de tests definidos, se procede a escribir la implementación para una determinada especificación, en este caso, para la creación/actualización de títulos dentro de un portafolio; A continuación se muestra el código perteneciente a dicha especificación, según el test.
+
+\begin{verbatim}
+def create
+  stock_action = StockAction.find_by_short_name(params[:name]) 
+  respond_to do |format|
+    if stock_action
+      t = Title.find(:first, 
+          :conditions => ["portafolio_id = ? and stock_action_id = ?", 
+                          @portafolio.id, stock_action.id])
+      if t
+        quantity = params[:title][:quantity]
+        price = params[:title][:initial_price]
+        if t.update_attr_average(quantity.to_i, price.to_f)
+          format.html { redirect_to(portafolio_path(@portafolio)) }
+        else
+          format.html { redirect_to :back }
+          flash[:error] = 'Los datos ingresados no son válidos.'
+        end
+      else
+        @title = @portafolio.titles.build(params[:title])    
+        @title.stock_action = stock_action
+        if @title.save
+          format.html { redirect_to(portafolio_path(@portafolio)) }
+        else
+          format.html { redirect_to :back }
+          flash[:error] = 'Los datos ingresados no son válidos'
+        end
+      end
+    else
+      format.html { redirect_to :back }
+      flash[:error] = 'La acción no existe.'
+    end
+  end
+end
+\end{verbatim}
+
+De esta manera, se itera a través de todas las especificaciones, para consecuentemente escribir, tests e implementación, asegurando que la aplicación hace lo que debe hacer.
+
 
 \section{Desarrollo Contenidos 3D}
 La arquitectura dentro de una escena en \textbf{Unity3D} consiste en un conjunto de \textbf{GameObjects} que interactúan entre si para mostrar un evento/animación en una escena; Dichos objetos se comunican, basándose en una jerarquía de objetos, donde la traslación/rotación/escalamiento de un padre afecta directamente a los hijos Figura\ref{fig:jerarq}.\\
@@ -298,6 +444,61 @@ Estas barras muestran variables como el porcentaje de variación, Cantidad negoc
 
 \section{Desarrollo protocolo de comunicación.}
 
-\section{Deployment}
+Para el conectar los contenidos 3D con toda la aplicación web, como se mencionó en secciones anteriores, se desarrolló un protocolo escrito en \emph{Javascript}, puesto que \emph{Unity3D} permite el llamado a funciones implementadas dentro del motor por medio de este lenguaje.\\ 
+
+Fue así como por medio de paso de mensajes y llamadas a funciones, se implementó el protocolo de comunicaciones, dicho protocolo actúa como canal sobre el que pasan mensajes a través de funciones nativas de \emph{Javascript} desde la aplicación web (\emph{Ruby} cuenta con una librería especifica para serializar objetos a \emph{Javascript}) a un Objeto \emph{Unity3D} que arroja el \emph{player}, dichas funciónes permiten hacer llamadas nativas a funciones de los contenidos 3D, facilitando este proceso que en un principio pareciera ser más tedioso.\\
+
+El principal problema que se presentó a la hora de diseñar el protocolo fue que el contenido  \emph{HTML} se cargaba antes y mas rápido que el contenido en 3D, lo que conducia eventualmente a la perdida de mensajes y a la incorrecta graficación de los datos. Para solucionar este problema se implementó una llamada desde el contenido 3D a la aplicación web  a través del protocolo que indica cuando un contenido esta listo para recibir datos, y de esta manera graficar correctamente los datos.
+
+A continuación se muestra la parte del protocolo y la función implementada desde el motor, que indica cuando el contenido esta listo para recibir y enviar mensajes.
+
+\begin{verbatim}
+write: function (elementId) {
+    if(this.detectUnityWebPlayer()) {
+        document.write(this.writeEmbedDOM());
+        this.findEar();
+        return true;
+    } else {
+        if(this.getAttribute('altHTML') != "") {
+            document.write(this.getAttribute('altHTML'));
+        } else if(this.getAttribute('redirectUrl') != "") {
+            document.location.replace(this.getAttribute('redirectUrl'));
+        }
+    }
+    return false;
+},
+
+findEar: function () {
+    this.unityEar = "";
+    if (navigator.appVersion.indexOf("MSIE") != -1 && 
+        navigator.appVersion.toLowerCase().indexOf("win") != -1) {
+        this.unityEar = document.getElementById(this.getAttribute('id')+"_object");
+    } else if (navigator.appVersion.toLowerCase().indexOf("safari") != -1) {
+        this.unityEar = document.getElementById(this.getAttribute('id')+"_object")
+    } else {
+        this.unityEar = document.getElementById(this.getAttribute('id')+"_embed");
+    }
+    document.Unity = this.unityEar;
+},
+   
+msg: function (unObj, unFunc, unVar) {
+    this.unityEar.SendMessage(unObj, unFunc, unVar);
+}
+\end{verbatim}
+
+La siguiente porción de código manda una señal hacia el protocolo implementado en \emph{Javascript}, indicando que la aplicación esta lista para renderizar contenidos.\\
+
+\begin{verbatim}
+//Funcion implementada en Unity3D
+function Update() {
+    if(Application.GetStreamProgressForLevel(0) == 1 && !finishedLoadingApp){
+        Application.ExternalCall("FinishedLoadingApp");
+        finishedLoadingApp = true;
+    }
+}
+\end{verbatim}
+\section{\emph{Deployment}}
+
+
 
 \section{SCM}

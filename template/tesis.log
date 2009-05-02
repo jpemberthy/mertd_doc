@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  1 MAY 2009 16:44
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  1 MAY 2009 19:13
 entering extended mode
  %&-line parsing enabled.
 **tesis.tex
@@ -914,27 +914,111 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--200
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+
+ []
+
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
-[21] <parenting.png, id=128, 240.9pt x 414.54875pt>
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 259--259
+[]\OT1/cmtt/m/n/10 require File.expand_path(File.dirname(__FILE__)) + '/../../c
+onfig/boot'[] 
+ []
+
+
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 259--259
+[]    \OT1/cmtt/m/n/10 ActiveRecord::Base.logger.info "Getting Stock info at #{
+col_time}.\n"[] 
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
+
+ []
+
+[23]
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 315--315
+[]                              \OT1/cmtt/m/n/10 :name => "ALMACENES EXITO", :i
+d => 1)[] 
+ []
+
+
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 315--315
+[]     \OT1/cmtt/m/n/10 @params = {:title => {:quantity => 301, :initial_price 
+=> 14000.23},[] 
+ []
+
+
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 315--315
+[]                                \OT1/cmtt/m/n/10 :portafolio_id => 1, :stock_
+action_id => 1)[] 
+ []
+
+
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 315--315
+[]                   \OT1/cmtt/m/n/10 @params[:title][:initial_price]).and_retu
+rn(true))[] 
+ []
+
+
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 315--315
+[]       \OT1/cmtt/m/n/10 response.should redirect_to(portafolio_path(@mock_por
+tafolio))[] 
+ []
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 352--352
+[]          \OT1/cmtt/m/n/10 :conditions => ["portafolio_id = ? and stock_actio
+n_id = ?",[] 
+ []
+
+[24]
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 352--352
+[]          \OT1/cmtt/m/n/10 format.html { redirect_to(portafolio_path(@portafo
+lio)) }[] 
+ []
+
+
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 352--352
+[]          \OT1/cmtt/m/n/10 format.html { redirect_to(portafolio_path(@portafo
+lio)) }[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+
+ []
+
+<parenting.png, id=137, 240.9pt x 414.54875pt>
 File: parenting.png Graphic file (type png)
  <use parenting.png>
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
 
  []
 
-<ArquitecturaUnity.png, id=129, 770.88pt x 433.62pt>
+<ArquitecturaUnity.png, id=138, 770.88pt x 433.62pt>
 File: ArquitecturaUnity.png Graphic file (type png)
 
 <use ArquitecturaUnity.png>
-Overfull \hbox (40.43906pt too wide) in paragraph at lines 228--229
+Overfull \hbox (40.43906pt too wide) in paragraph at lines 374--375
  [][] 
  []
 
@@ -942,82 +1026,83 @@ Overfull \hbox (40.43906pt too wide) in paragraph at lines 228--229
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
+Underfull \hbox (badness 10000) in paragraph at lines 381--382
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
-
- []
-
-[22 <./parenting.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
+
+ []
+
+[26 <./parenting.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
-
- []
-
-[23 <./ArquitecturaUnity.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 
  []
 
-<Barras.png, id=136, 700.6175pt x 500.87125pt>
+[27 <./ArquitecturaUnity.png (PNG copy)>]
+<Barras.png, id=149, 700.6175pt x 500.87125pt>
 File: Barras.png Graphic file (type png)
  <use Barras.png>
-Overfull \hbox (5.30789pt too wide) in paragraph at lines 264--265
+Overfull \hbox (5.30789pt too wide) in paragraph at lines 410--411
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
 
-
-Underfull \vbox (badness 1082) has occurred while \output is active []
-
- [24 <./Barras.png (PNG copy)>] <Espiral.png, id=140, 686.565pt x 395.4775pt>
+<Espiral.png, id=150, 686.565pt x 395.4775pt>
 File: Espiral.png Graphic file (type png)
+ <use Espiral.png>
 
-<use Espiral.png>
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
 
-<Superficie.png, id=141, 702.625pt x 497.86pt>
+<Superficie.png, id=151, 702.625pt x 497.86pt>
 File: Superficie.png Graphic file (type png)
  <use Superficie.png>
-Overfull \hbox (6.31163pt too wide) in paragraph at lines 284--285
+Overfull \hbox (6.31163pt too wide) in paragraph at lines 430--431
  [][] 
  []
 
@@ -1025,27 +1110,80 @@ Overfull \hbox (6.31163pt too wide) in paragraph at lines 284--285
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
  []
 
-<Campo.png, id=142, 701.62125pt x 496.85625pt>
+[28 <./Barras.png (PNG copy)>] <Campo.png, id=155, 701.62125pt x 496.85625pt>
 File: Campo.png Graphic file (type png)
- <use Campo.png>
-Overfull \hbox (5.80975pt too wide) in paragraph at lines 293--294
+
+<use Campo.png>
+Overfull \hbox (5.80975pt too wide) in paragraph at lines 439--440
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25 <./Espiral.png (PNG copy)>] [26 <./Superficie.png (PNG copy)>] [27 <./Camp
-o.png (PNG copy)>] [28
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
 
-] (./tesis.bbl) [29
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
+
+ []
+
+[29 <./Espiral.png (PNG copy)>]
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 487--487
+[]            \OT1/cmtt/m/n/10 document.location.replace(this.getAttribute('red
+irectUrl'));[] 
+ []
+
+[30 <./Superficie.png (PNG copy)>]
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 487--487
+[]        \OT1/cmtt/m/n/10 navigator.appVersion.toLowerCase().indexOf("win") !=
+ -1) {[] 
+ []
+
+
+Overfull \hbox (90.7462pt too wide) in paragraph at lines 487--487
+[]        \OT1/cmtt/m/n/10 this.unityEar = document.getElementById(this.getAttr
+ibute('id')+"_object");[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 487--487
+[]    \OT1/cmtt/m/n/10 } else if (navigator.appVersion.toLowerCase().indexOf("s
+afari") != -1) {[] 
+ []
+
+
+Overfull \hbox (85.49625pt too wide) in paragraph at lines 487--487
+[]        \OT1/cmtt/m/n/10 this.unityEar = document.getElementById(this.getAttr
+ibute('id')+"_object")[] 
+ []
+
+
+Overfull \hbox (85.49625pt too wide) in paragraph at lines 487--487
+[]        \OT1/cmtt/m/n/10 this.unityEar = document.getElementById(this.getAttr
+ibute('id')+"_embed");[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
+
+ []
+
+[31 <./Campo.png (PNG copy)>]
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 499--499
+[]    \OT1/cmtt/m/n/10 if(Application.GetStreamProgressForLevel(0) == 1 && !fin
+ishedLoadingApp){[] 
+ []
+
+) [32] (./tesis.bbl) [33
+
 
 ] (./tesis.aux)
 
@@ -1053,13 +1191,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4434 strings out of 493876
- 53997 string characters out of 1150567
+ 4435 strings out of 493876
+ 54015 string characters out of 1150567
  144697 words of memory out of 3000000
- 7590 multiletter control sequences out of 10000+50000
- 16217 words of font info for 64 fonts, out of 3000000 for 5000
+ 7591 multiletter control sequences out of 10000+50000
+ 16576 words of font info for 65 fonts, out of 3000000 for 5000
  716 hyphenation exceptions out of 8191
- 27i,8n,27p,1358b,413s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,27p,1358b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx10.pfb></usr/l
 ocal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx12.pfb></usr/local/texl
 ive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx7.pfb></usr/local/texlive/2008/t
@@ -1075,9 +1213,9 @@ exlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr7.pfb></usr/local/texlive/2008
 pe1/bluesky/cm/cmsy10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/blues
 ky/cm/cmti10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmt
 i8.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmtt10.pfb>
-Output written on tesis.pdf (41 pages, 775331 bytes).
+Output written on tesis.pdf (45 pages, 788261 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
+ 227 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

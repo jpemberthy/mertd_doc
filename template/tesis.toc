@@ -19,12 +19,12 @@
 \contentsline {subsection}{\numberline {6.1.3}Configuraci\IeC {\'o}n.}{18}
 \contentsline {subsubsection}{Servidor Web - \emph {Clusters}}{18}
 \contentsline {subsubsection}{Base de datos}{20}
-\contentsline {subsection}{\numberline {6.1.4}Daemon - \emph {Stock Getter}.}{21}
-\contentsline {subsection}{\numberline {6.1.5}\emph {TDD Cycle}}{21}
-\contentsline {section}{\numberline {6.2}Desarrollo Contenidos 3D}{21}
-\contentsline {subsection}{\numberline {6.2.1}M\IeC {\'o}dulo de detecci\IeC {\'o}n de datos e informaci\IeC {\'o}n del exterior:}{22}
-\contentsline {subsection}{\numberline {6.2.2}Modulo de informaci\IeC {\'o}n de Objetos:}{23}
-\contentsline {subsection}{\numberline {6.2.3}M\IeC {\'o}dulo de renderizado de escena (\emph {Grapher}):}{23}
-\contentsline {section}{\numberline {6.3}Desarrollo protocolo de comunicaci\IeC {\'o}n.}{26}
-\contentsline {section}{\numberline {6.4}Deployment}{26}
-\contentsline {section}{\numberline {6.5}SCM}{26}
+\contentsline {subsection}{\numberline {6.1.4}Daemon - \emph {Stock Getter}}{21}
+\contentsline {subsection}{\numberline {6.1.5}\emph {TDD Cycle}}{23}
+\contentsline {section}{\numberline {6.2}Desarrollo Contenidos 3D}{25}
+\contentsline {subsection}{\numberline {6.2.1}M\IeC {\'o}dulo de detecci\IeC {\'o}n de datos e informaci\IeC {\'o}n del exterior:}{26}
+\contentsline {subsection}{\numberline {6.2.2}Modulo de informaci\IeC {\'o}n de Objetos:}{26}
+\contentsline {subsection}{\numberline {6.2.3}M\IeC {\'o}dulo de renderizado de escena (\emph {Grapher}):}{27}
+\contentsline {section}{\numberline {6.3}Desarrollo protocolo de comunicaci\IeC {\'o}n.}{29}
+\contentsline {section}{\numberline {6.4}\emph {Deployment}}{32}
+\contentsline {section}{\numberline {6.5}SCM}{32}
