@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  4 MAY 2009 11:11
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  4 MAY 2009 11:18
 entering extended mode
  %&-line parsing enabled.
 **tesis.tex
@@ -1079,11 +1079,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 405--406
 <Barras.png, id=149, 700.6175pt x 500.87125pt>
 File: Barras.png Graphic file (type png)
  <use Barras.png>
-Overfull \hbox (5.30789pt too wide) in paragraph at lines 410--411
- [][] 
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
@@ -1091,57 +1086,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--417
 <Espiral.png, id=150, 686.565pt x 395.4775pt>
 File: Espiral.png Graphic file (type png)
  <use Espiral.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
 
-<Superficie.png, id=151, 702.625pt x 497.86pt>
+[28 <./Barras.png (PNG copy)> <./Espiral.png (PNG copy)>]
+<Superficie.png, id=154, 702.625pt x 497.86pt>
 File: Superficie.png Graphic file (type png)
  <use Superficie.png>
-Overfull \hbox (6.31163pt too wide) in paragraph at lines 430--431
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
  []
 
-[28 <./Barras.png (PNG copy)>] <Campo.png, id=155, 701.62125pt x 496.85625pt>
+<Campo.png, id=155, 701.62125pt x 496.85625pt>
 File: Campo.png Graphic file (type png)
-
-<use Campo.png>
-Overfull \hbox (5.80975pt too wide) in paragraph at lines 439--440
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+ <use Campo.png>
 Underfull \hbox (badness 10000) in paragraph at lines 447--448
 
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29 <./Superficie.png (PNG copy)> <./Campo.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 449--450
 
  []
 
-[29 <./Espiral.png (PNG copy)>]
+
 Overfull \hbox (32.9967pt too wide) in paragraph at lines 487--487
 []            \OT1/cmtt/m/n/10 document.location.replace(this.getAttribute('red
 irectUrl'));[] 
  []
 
-[30 <./Superficie.png (PNG copy)>]
+
 Overfull \hbox (1.49698pt too wide) in paragraph at lines 487--487
 []        \OT1/cmtt/m/n/10 navigator.appVersion.toLowerCase().indexOf("win") !=
  -1) {[] 
@@ -1159,7 +1137,7 @@ Overfull \hbox (53.99652pt too wide) in paragraph at lines 487--487
 afari") != -1) {[] 
  []
 
-
+[30]
 Overfull \hbox (85.49625pt too wide) in paragraph at lines 487--487
 []        \OT1/cmtt/m/n/10 this.unityEar = document.getElementById(this.getAttr
 ibute('id')+"_object")[] 
@@ -1176,17 +1154,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
 
-[31 <./Campo.png (PNG copy)>]
+
 Overfull \hbox (59.24648pt too wide) in paragraph at lines 499--499
 []    \OT1/cmtt/m/n/10 if(Application.GetStreamProgressForLevel(0) == 1 && !fin
 ishedLoadingApp){[] 
  []
 
-) (./conclusiones.tex [32]
-Cap\'{\i }tulo 7.
-[33
+) (./conclusiones.tex [31] [32
 
-]) [34] (./tesis.bbl) [35
+]
+Cap\'{\i }tulo 7.
+[33]) [34] (./tesis.bbl) [35
 
 
 ] (./tesis.aux)
@@ -1201,7 +1179,7 @@ Here is how much of TeX's memory you used:
  7590 multiletter control sequences out of 10000+50000
  16217 words of font info for 64 fonts, out of 3000000 for 5000
  716 hyphenation exceptions out of 8191
- 27i,8n,27p,1358b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,27p,1358b,413s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx10.pfb></usr/l
 ocal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx12.pfb></usr/local/texl
 ive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx7.pfb></usr/local/texlive/2008/t
@@ -1217,7 +1195,7 @@ exlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr7.pfb></usr/local/texlive/2008
 pe1/bluesky/cm/cmsy10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/blues
 ky/cm/cmti10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmt
 i8.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmtt10.pfb>
-Output written on tesis.pdf (47 pages, 791308 bytes).
+Output written on tesis.pdf (47 pages, 791123 bytes).
 PDF statistics:
  233 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
