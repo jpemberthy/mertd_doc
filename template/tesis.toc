@@ -1,7 +1,8 @@
 \select@language {spanish}
-\contentsline {chapter}{Glosario}{\es@scroman {ii}}
-\contentsline {chapter}{Introducci\IeC {\'o}n}{\es@scroman {vi}}
-\contentsline {chapter}{Definici\IeC {\'o}n del problema}{\es@scroman {viii}}
+\contentsline {paragraph}{ }{\es@scroman {i}}
+\contentsline {chapter}{Glosario}{\es@scroman {iv}}
+\contentsline {chapter}{Introducci\IeC {\'o}n}{\es@scroman {viii}}
+\contentsline {chapter}{Definici\IeC {\'o}n del problema}{\es@scroman {x}}
 \contentsline {chapter}{\numberline {1}Objetivos del proyecto}{1}
 \contentsline {section}{\numberline {1.1}Objetivo General}{1}
 \contentsline {section}{\numberline {1.2}Objetivos Espec\IeC {\'\i }ficos}{1}
