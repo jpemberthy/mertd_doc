@@ -26,5 +26,4 @@
 \contentsline {subsection}{\numberline {6.2.2}Modulo de informaci\IeC {\'o}n de Objetos:}{26}
 \contentsline {subsection}{\numberline {6.2.3}M\IeC {\'o}dulo de renderizado de escena (\emph {Grapher}):}{27}
 \contentsline {section}{\numberline {6.3}Desarrollo protocolo de comunicaci\IeC {\'o}n.}{29}
-\contentsline {section}{\numberline {6.4}\emph {Deployment}}{32}
-\contentsline {section}{\numberline {6.5}SCM}{32}
+\contentsline {chapter}{\numberline {7}Conclusiones}{33}
