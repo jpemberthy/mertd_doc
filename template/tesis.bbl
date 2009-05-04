@@ -1,4 +1,24 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{864016}
+Dave Astels.
+\newblock {\em Test Driven development: A Practical Guide}.
+\newblock Prentice Hall Professional Technical Reference, 2003.
+
+\bibitem{579193}
+Beck.
+\newblock {\em Test Driven Development: By Example}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA, 2002.
+
+\bibitem{vis:toolkitInteractiveInf}
+Jeffrey Heer. Stuart~K. Card. and James~A. Landay.
+\newblock {\em A toolkit for interactive information visualization}.
+\newblock 2005.
+
+\bibitem{383531}
+John~C. Hart.
+\newblock Perlin noise pixel shaders.
+\newblock Technical report, New York, NY, USA, 2001.
 
 \bibitem{ror:cookbook}
 Rob Orsini.
@@ -17,10 +37,20 @@ Maribel~Serna Rodríguez and Andrés Mauricio~Mora Cuartas.
 \newblock MERCADOS FINANCIEROS 003891, GRUPO DE INVESTIGACIÓN EN FINANZAS Y
   BANCA - EAFIT, July 2007.
 
+\bibitem{vis:MiningMarketData}
+Vladimir~Boginski. SergiyButenko. and PanosM. Pardalos.
+\newblock Mining market data: A network approach.
+\newblock Mercados financieros, ACM Press., 2002.
+
 \bibitem{ror:awdwr}
 Dave Thomas, David Hansson, Leon Breedt, Mike Clark, James~Duncan Davidson,
   Justin Gehtland, and Andreas Schwarz.
 \newblock {\em Agile Web Development with Rails}.
 \newblock 2006.
+
+\bibitem{vis:InteractiveVisSmalWorldGraphs}
+Frank van Ham and JarkeJ. van Wijk.
+\newblock Interactive visualization of small world graphs.
+\newblock Information visualization, IEEE Computer Society., 2004.
 
 \end{thebibliography}

@@ -196,7 +196,7 @@ class CreateUsers < ActiveRecord::Migration
 end
 \end{verbatim}
 
-Para cada migración se debe definir una tarea dependiendo si se realiza la migración o si por el contrario se esta revirtiendo una migración, la migración anterior por ejemplo, para ser revertida utiliza la sentencia \emph{drop\_table}.\\
+Para cada migración se debe definir una tarea dependiendo si se realiza la migración o si por el contrario se esta revirtiendo una migración\cite{vis:MiningMarketData}, la migración anterior por ejemplo, para ser revertida utiliza la sentencia \emph{drop\_table}.\\
 
 Finalmente para actualizar la base de datos se corre la migración mediante una tarea \emph{rake}\footnote{Un programa de construcción de \emph{Ruby} con características similares a \emph{make}}.
 
@@ -262,7 +262,7 @@ Al ser un proyecto con fines académicos el \emph{Daemon} no reconoce días fest
 
 \subsection{\emph{TDD Cycle}}
 
-Siguiendo una metodología como \textbf{TDD}(\emph{Test Driven Development} ó Desarrollo Guiado por Pruebas) se realizó el desarrollo del núcleo de la aplicación, esta práctica de programación se usa generalmente para lograr un código limpio y funcional, la idea es que se utilicen las especificaciones/requerimientos definidos anteriormente, para que sean traducidos en pruebas, cada vez que el conjunto de pruebas que definen un requerimiento pasan, se garantiza que la especificación ha sido implementada correctamente. Otro punto importante, es el de hacer pruebas pequeñas con el fin de determinar bajo que condiciones se introduce un error, ó cuando falla la aplicación.\\
+Siguiendo una metodología como \textbf{TDD}(\emph{Test Driven Development} ó Desarrollo Guiado por Pruebas) se realizó el desarrollo del núcleo de la aplicación, esta práctica de programación se usa generalmente para lograr un código limpio y funcional, la idea es que se utilicen las especificaciones/requerimientos definidos anteriormente, para que sean traducidos en pruebas, cada vez que el conjunto de pruebas que definen un requerimiento pasan, se garantiza que la especificación ha sido implementada correctamente\cite{579193}\cite{864016}. Otro punto importante, es el de hacer pruebas pequeñas con el fin de determinar bajo que condiciones se introduce un error, ó cuando falla la aplicación.\\
 
 El ciclo entonces consiste en que para cada especificación, se debe:
 \begin{enumerate}
@@ -391,7 +391,7 @@ Este módulo se encarga del manejo de menús y todo lo que tiene que ver con la 
 
 Finalmente, éste módulo se encarga de lo que es el dibujado de la información proveniente del modulo de información de objetos; éste módulo nunca se entiende con el módulo de datos e información del exterior.\\
  
-Para graficar la escena, se recorren todos los nodos que posee el módulo de información y se gráfica (dependiendo del tipo de gráfico) cada nodo.\\
+Para graficar la escena, se recorren todos los nodos que posee el módulo de información y se gráfica (dependiendo del tipo de gráfico) cada nodo\cite{vis:InteractiveVisSmalWorldGraphs}.\\
 
 
 Cabe aclarar que se debe hacer un `vaciado de hijos' del objeto \emph{Grapher} cada vez que se visualizan contenidos, para no introducir \textbf{leaks}\footnote{Ocurre cuando un bloque de memoria reservada no es liberada en un programa de computación. Comúnmente ocurre porque se pierden todas las referencias a esa área de memoria antes de haberse liberado. Dependiendo de la cantidad de memoria perdida y el tiempo que el programa siga en ejecución, este problema puede llevar al agotamiento de la memoria disponible en la máquina.} de memoria.\\
@@ -432,7 +432,7 @@ Estas barras muestran variables como el porcentaje de variación, Cantidad negoc
 	\label{fig:Superficie}
 \end{figure}
 
-\textbf{Campo} [\ref{fig:Campo}]: Es el tipo de gráfico mas complejo que se realizó, pues en este gráfico se comparan variables de Cantidad Vs Rentabilidad a través del tiempo, entonces por medio de estas variables se puede inferir si una acción se esta tranzando en la bolsa en mucha cantidad o no y si dicha acción esta siendo rentable; Este gráfico provee una serie de `zonas' que ayudan al usuario a entender el estado de las acciones en un momento dado, y así inferir facilmente si la acción esta generando pérdidas o ganancias y si esta muy o poco demandada\\
+\textbf{Campo} [\ref{fig:Campo}]: Es el tipo de gráfico mas complejo que se realizó, pues en este gráfico se comparan variables de Cantidad Vs Rentabilidad a través del tiempo\cite{383531}, entonces por medio de estas variables se puede inferir si una acción se esta transando en la bolsa en mucha cantidad o no y si dicha acción esta siendo rentable; Este gráfico provee una serie de `zonas' que ayudan al usuario a entender el estado de las acciones en un momento dado, y así inferir fácilmente si la acción esta generando pérdidas o ganancias y si esta muy o poco demandada\\
 
 \begin{figure}[h]
 	\centering
